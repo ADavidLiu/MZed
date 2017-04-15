@@ -1,0 +1,74 @@
+.page-header {
+    background-color: $gray-lighter;
+    padding: 1.875rem 0;
+    border: 0 !important;
+    margin: 0 !important;
+    &__breadcrumbs {
+        &-item {
+            padding: 0 0.3rem !important;
+            position: relative;
+            &+&:before {
+                content: ">";
+                color: $gray-dark;
+                font-family: $light;
+                position: absolute;
+                top: 50%;
+                left: -4px;
+                transform: translateY(-50%);
+            }
+        }
+        &-link {
+            color: $gray-dark;
+            text-decoration: none;
+            font-family: $light;
+            font-size: 1.25rem;
+            @include atSmall {
+                font-size: 0.9375rem;
+            }
+            &:link,
+            &:hover,
+            &:focus,
+            &:visited {
+                color: $gray-dark;
+                text-decoration: none;
+            }
+            &--current {
+                font-family: $medium;
+                color: $brand;
+                &:link,
+                &:hover,
+                &:focus,
+                &:visited {
+                    color: $brand;
+                }
+            }
+        }
+    }
+    &__title {
+        padding-top: 2.5125rem;
+        font-family: $medium;
+        font-size: 2.5rem;
+        color: $black;
+    }
+    &__filter {
+        font-size: 2.125rem;
+        margin-top: 2rem;
+        font-family: $light;
+        color: $black;
+        &-selection {
+            font-family: $medium;
+            color: $brand;
+            cursor: pointer;
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: 3px;
+                left: 0;
+                height: 1px;
+                width: 100%;
+                background-color: $brand;
+            }
+        }
+    }
+}

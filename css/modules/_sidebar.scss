@@ -1,0 +1,44 @@
+.sidebar {
+    &__filter {
+        &+& {
+            margin-top: 2rem;
+        }
+        &:last-child {
+            margin-bottom: 1rem;
+        }
+        &-header {
+            cursor: pointer;
+        }
+        &-title {
+            font-family: $medium;
+            font-size: 1.375rem;
+            line-height: 1.375rem;
+            color: $black;
+            display: inline-block;
+        }
+        &-icon {
+            font-size: 0.8rem;
+            transform: translateY(-3px);
+            margin-right: 0.4rem;
+            transition: all .25s;
+            &--rotated {
+                transform: translateY(-3px) rotate(180deg);
+            }
+        }
+        &-content {
+            padding-top: 1.25rem;
+        }
+        &-item {
+            font-family: $light;
+            font-size: 1.3333rem;
+            color: $gray;
+            cursor: pointer;
+            @include atSmall {
+                font-size: 1rem;
+            }
+            &-check {
+                transform: translateY(2px);
+            }
+        }
+    }
+}

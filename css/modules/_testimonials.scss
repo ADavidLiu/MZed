@@ -1,0 +1,76 @@
+.testimonials {
+    padding: 3.75rem 15px 2.3rem 15px;
+    background-color: $gray-lighter;
+    text-align: center;
+    &__wrapper {
+        @include atSmall {
+            max-width: 860px;
+            margin: 0 auto;
+            float: none;
+            padding: 0;
+        }
+    }
+    &__title {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-family: $light;
+        color: $black;
+        margin-bottom: 2.5rem;
+    }
+    &__item {
+        padding: 0 2rem;
+        &-text {
+            font-size: 2rem;
+            font-family: $light;
+            color: $gray;
+        }
+        &-author {
+            font-family: $medium;
+            color: $brand;
+            font-size: 1.5rem;
+            margin-top: 2rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+    &__control {
+        opacity: 1 !important;
+        background: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+        width: auto;
+        display: inline-block;
+        height: 39px;
+        top: 20%;
+        transform: translateY(-20%);
+        &--prev {
+            transform: translateY(-20%) scaleX(-1);
+            @include atSmall {
+                left: -5% !important;
+            }
+            @include atLarge {
+                left: -10% !important;
+            }
+        }
+        &--next {
+            @include atSmall {
+                right: -5% !important;
+            }
+            @include atLarge {
+                right: -10% !important;
+            }
+        }
+    }
+    &__indicators {
+        bottom: -5%;
+    }
+    &__indicator {
+        background-color: $gray-alt !important;
+        height: 10px !important;
+        width: 10px !important;
+        margin: 0 !important;
+        &.active {
+            background-color: $white !important;
+            border: 2px solid $brand;
+        }
+    }
+}

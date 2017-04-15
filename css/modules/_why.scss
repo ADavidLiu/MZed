@@ -1,0 +1,12 @@
+.why {
+    padding: 2.8125rem 15px 3.125rem 15px;
+    background-color: $gray-lighter;
+    text-align: center;
+    &__title {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        font-family: $light;
+        color: $black;
+        margin-bottom: 2.5rem;
+    }
+}

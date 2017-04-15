@@ -1,0 +1,35 @@
+.offers {
+    padding: 6.25rem 30px;
+    @include atSmall {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &__title {
+        text-align: center;
+        font-size: 2.8125rem;
+        line-height: 3rem;
+        color: $black;
+        font-family: $thin;
+        @include atSmall {
+            text-align: left;
+        }
+    }
+    &__text {
+        font-size: 1.375rem;
+        line-height: 1.875rem;
+        color: $black;
+        font-family: $light;
+        margin-top: 2.1875rem;
+        padding: 0;
+        @include atSmall {
+            padding: 0 15px 0 0;
+        }
+    }
+    &__logos {
+        padding: 0;
+        margin-top: 2rem;
+        @include atSmall {
+            padding: 0 0 0 15px;
+        }
+    }
+}

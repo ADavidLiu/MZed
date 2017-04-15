@@ -1,0 +1,153 @@
+.hero {
+    min-height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/hero.png");
+    position: relative;
+    @include atSmall {
+        min-height: 48rem;
+    }
+    &--pro {
+        background-image: url("../images/pro-hero.png");
+    }
+    &__thumbnails {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: auto;
+        width: 100%;
+    }
+    &__container {
+        position: relative;
+        min-height: 80vh;
+        @include atSmall {
+            min-height: 48rem;
+        }
+    }
+    &__copy {
+        width: 80%;
+        max-width: 750px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        @include atSmall {
+            width: 100%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+        &--pro {
+            max-width: none;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -40%);
+            width: 100%;
+            padding: 0 30px;
+            text-align: center;
+            color: $white;
+            @include atMedium {
+                top: 35%;
+                transform: translate(-50%, -35%);
+            }
+            @include atLarge {
+                top: 25%;
+                transform: translate(-50%, -25%);
+            }
+        }
+    }
+    &__title {
+        font-size: 5.625rem;
+        line-height: 5.75rem;
+        color: $white;
+        font-family: $thin;
+        &--bold {
+            font-family: $bold;
+        }
+        &--pro {
+            font-family: $thin;
+            font-size: 4.75rem;
+            line-height: 3.875rem;
+        }
+    }
+    &__subtitle {
+        font-family: $medium;
+        font-size: 1.25rem;
+        color: $white;
+        margin-bottom: 3rem;
+        &--pro {
+            font-family: $thin;
+            font-size: 2.8125rem;
+            line-height: 2.25rem;
+            margin-bottom: 1.875rem;
+        }
+    }
+    &__cta {
+        padding: 1rem 2rem;
+        font-family: $medium;
+        color: $white;
+        font-size: 1.0625rem;
+        background-color: $black;
+        border: 2px solid $black;
+        border-radius: 0.2rem;
+        text-decoration: none;
+        &--outline {
+            border: 2px solid $white;
+            background: none;
+        }
+        & + & {
+            margin-left: 0.5rem;
+        }
+        &:link,
+        &:hover,
+        &:focus,
+        &:visited {
+            color: $white;
+            text-decoration: none;
+        }
+    }
+    &__btn {
+        &--pro {
+            font-family: $thin;
+            font-size: 2rem;
+            line-height: 2rem;
+            margin-top: 2.8125rem;
+            position: relative;
+            padding-right: 2rem;
+            display: inline-block;
+            cursor: pointer;
+            &:after {
+                content: "";
+                position: absolute;
+                right: -1rem;
+                top: 50%;
+                transform: translateY(-50%);
+                background-image: url("../images/play.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                width: 2rem;
+                height: 2rem;
+            }
+        }
+    }
+    &__control {
+        opacity: 1 !important;
+        background: none !important;
+        box-shadow: none !important;
+        outline: none !important;
+        width: auto;
+        display: inline-block;
+        height: 39px;
+        top: 50%;
+        transform: translateY(-50%);
+        &--prev {
+            transform: scaleX(-1) translateY(-50%);
+            left: 1.25rem;
+        }
+        &--next {
+            right: 1.25rem !important;
+        }
+    }
+}

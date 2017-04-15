@@ -1,0 +1,195 @@
+.header {
+    padding: 15px 0;
+    background-color: $white;
+    &--pro {
+        background-color: $black;
+    }
+    &__menu {
+        padding: 0;
+    }
+    &__navbar {
+        margin: 0;
+        border: 0;
+    }
+    &__brand {
+        @include atSmall {
+            float: none;
+            width: 100%;
+            display: block;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+        @include atMedium {
+            margin-bottom: 0;
+            float: left;
+            width: auto;
+            display: inline-block;
+            text-align: left;
+        }
+    }
+    &__logo {
+        height: 100%;
+        width: auto;
+        @include atSmall {
+            margin: 0 auto;
+        }
+        @include atMedium {
+            margin: 0;
+        }
+    }
+    &__btn {
+        &-bar {
+            background-color: $black;
+            &--pro {
+                background-color: $white;
+            }
+        }
+    }
+    &__list {
+        text-align: center;
+    }
+    &__sublist {
+        background-color: $white;
+        text-align: center;
+        @include atSmall {
+            text-align: left;
+        }
+        &--pro {
+            background-color: $black;
+        }
+    }
+    &__link {
+        color: $gray-dark !important;
+        text-decoration: none !important;
+        background: none !important;
+        font-family: $medium;
+        font-size: 1.0625rem;
+        text-align: center;
+        position: relative;
+        display: inline-block !important;
+        @include atSmall {
+            text-align: left;
+        }
+        &:link,
+        &:hover,
+        &:focus,
+        &:visited {
+            color: $gray-dark !important;
+            text-decoration: none !important;
+            background: none !important;
+        }
+        &--dropdown {
+            padding-right: 2rem !important;
+        }
+        &-arrow {
+            position: absolute;
+            top: 50%;
+            right: 0.7rem;
+            transform: translateY(-50%);
+            font-size: 0.6rem;
+            color: $gray-dark;
+            &--pro {
+                color: $white;
+            }
+        }
+        &--sub {
+            padding: 5px 15px !important;
+        }
+        &--pro {
+            color: $white !important;
+            &:link,
+            &:hover,
+            &:focus,
+            &:visited {
+                color: $white !important;
+            }
+        }
+    }
+    &__pro-link {
+        display: inline-block !important;
+        color: $white !important;
+        font-family: $medium;
+        font-size: 1.0625rem;
+        background-color: $brand !important;
+        text-decoration: none !important;
+        border-radius: 0.2rem;
+        padding: 15px 30px !important;
+        &:link,
+        &:hover,
+        &:focus,
+        &:visited {
+            color: $white !important;
+            background-color: $brand !important;
+            text-decoration: none !important;
+        }
+        @include atSmall {
+            padding: 15px !important;
+        }
+        @include atLarge {
+            padding: 15px 30px !important;
+        }
+    }
+    &__navbar-header {
+        @include atSmall {
+            float: none;
+            text-align: center;
+        }
+        @include atMedium {
+            float: left;
+            text-align: left;
+        }
+    }
+    &__form {
+        @include atSmall {
+            margin: 4px 0 0 0;
+            width: 180px;
+        }
+        @include atMedium {
+            width: auto;
+        }
+        &--pro {
+            width: auto;
+        }
+    }
+    &__search {
+        padding: 15px;
+        position: relative;
+        @include atSmall {
+            padding: 0;
+        }
+        &-icon {
+            position: absolute;
+            top: 50%;
+            left: calc(15px + 1.5rem);
+            transform: translateY(-50%);
+            color: $gray-dark;
+            font-size: 1.3rem;
+            @include atSmall {
+                font-size: 1.2rem;
+                left: 1.5rem;
+            }
+            &--pro {
+                color: $white;
+            }
+        }
+        &-input {
+            background: none;
+            height: 4rem !important;
+            padding: 0 1rem 0 3.5rem !important;
+            border: 1px solid $gray !important;
+            font-family: $medium;
+            color: $gray;
+            border-radius: 0.3rem;
+            width: 100% !important;
+            @include atSmall {
+                max-width: 220px;
+                font-size: 1.0625rem;
+                height: 2.8125rem !important;
+            }
+            &:focus {
+                outline: none;
+                box-shadow: none !important;
+            }
+        }
+    }
+}

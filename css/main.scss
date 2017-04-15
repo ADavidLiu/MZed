@@ -1,0 +1,116 @@
+/*------------- BASE IMPORT -------------*/
+
+@import "_variables.scss";
+@import "_base.scss";
+
+
+/*------------- UTILITIES IMPORT -------------*/
+
+@import "_utilities.scss";
+
+
+/*------------- MODULES IMPORT -------------*/
+
+/*------------- TABLE OF CONTENTS -------------*/
+
+
+/*
+
+    1. HERO
+    2. HEADER
+    3. INTRO
+    4. FEATURES
+    5. OFFERS
+    6. PRO-WHY
+    7. JOIN
+    8. FOOTER
+    9. SUBSCRIBE
+    10. WHY
+    11. FEATURED-CATEGORIES
+    12. TESTIMONIALS
+    13. PAGE-HEADER
+    14. EDUCATOR
+    15. COURSE
+    16. SIDEBAR
+
+*/
+
+
+/*------------- 1. HERO -------------*/
+
+@import "modules/_hero.scss";
+
+
+/*------------- 2. HEADER -------------*/
+
+@import "modules/_header.scss";
+
+
+/*------------- 3. INTRO -------------*/
+
+@import "modules/_intro.scss";
+
+
+/*------------- 4. FEATURES -------------*/
+
+@import "modules/_features.scss";
+
+
+/*------------- 5. OFFERS -------------*/
+
+@import "modules/_offers.scss";
+
+
+/*------------- 6. PRO-WHY -------------*/
+
+@import "modules/_pro-why.scss";
+
+
+/*------------- 7. JOIN -------------*/
+
+@import "modules/_join.scss";
+
+
+/*------------- 8. FOOTER -------------*/
+
+@import "modules/_footer.scss";
+
+
+/*------------- 9. SUBSCRIBE -------------*/
+
+@import "modules/_subscribe.scss";
+
+
+/*------------- 10. WHY -------------*/
+
+@import "modules/_why.scss";
+
+
+/*------------- 11. FEATURED-CATEGORIES -------------*/
+
+@import "modules/_featured-categories.scss";
+
+
+/*------------- 12. TESTIMONIALS -------------*/
+
+@import "modules/_testimonials.scss";
+
+
+/*------------- 13. PAGE-HEADER -------------*/
+
+@import "modules/_page-header.scss";
+
+
+/*------------- 14. EDUCATOR -------------*/
+
+@import "modules/_educator.scss";
+
+
+/*------------- 15. COURSE -------------*/
+
+@import "modules/_course.scss";
+
+
+/*------------- 16. SIDEBAR -------------*/
+
+@import "modules/_sidebar.scss";

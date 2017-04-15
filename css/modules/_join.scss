@@ -1,0 +1,84 @@
+.join {
+    text-align: center;
+    background-color: $black;
+    padding: 3.125rem 15px;
+    &__title {
+        font-size: 2.8125rem;
+        line-height: 3.875rem;
+        color: $white;
+        font-family: $thin;
+    }
+    &__text {
+        font-family: $light;
+        font-size: 1.375rem;
+        line-height: 1.875rem;
+        color: $gray;
+    }
+    &__plan {
+        &-title {
+            font-family: $light;
+            font-size: 2.1875rem;
+            line-height: 3.375rem;
+            color: $white;
+            margin-top: 1rem;
+        }
+        &-price {
+            background-image: -moz-linear-gradient(left, rgba(50, 103, 205, 1) 0%, rgba(43, 153, 224, 1) 100%);
+            background-image: -webkit-linear-gradient(left, rgba(50, 103, 205, 1) 0%, rgba(43, 153, 224, 1) 100%);
+            background-image: linear-gradient(to right, rgba(50, 103, 205, 1) 0%, rgba(43, 153, 224, 1) 100%);
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            font-size: 5.3125rem;
+            font-family: $thin;
+        }
+        &-features {
+            max-width: 325px;
+            margin: 0 auto;
+        }
+        &-feature {
+            font-size: 1.3125rem;
+            line-height: 3rem;
+            padding-top: 0.5rem;
+            font-family: $light;
+            color: $white;
+            border-top: 1px solid $gray-darker;
+            &:last-child {
+                border-bottom: 1px solid $gray-darker;
+            }
+        }
+        &-btn {
+            display: inline-block;
+            height: 2.8125rem;
+            background-color: $brand;
+            line-height: 2.8125rem;
+            padding: 0 2rem;
+            color: $white;
+            text-decoration: none;
+            font-family: $medium;
+            font-size: 1.0625rem;
+            border-radius: 0.2rem;
+            margin: 1.5rem 0 1.3rem 0;
+            &:link,
+            &:hover,
+            &:focus,
+            &:visited {
+                color: $white;
+                text-decoration: none;
+            }
+        }
+        &-gift {
+            display: block;
+            font-family: $light;
+            color: $white;
+            font-size: 1.0625rem;
+            text-decoration: underline;
+            &:link,
+            &:hover,
+            &:focus,
+            &:visited {
+                color: $white;
+            }
+        }
+    }
+}

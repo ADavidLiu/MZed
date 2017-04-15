@@ -1,0 +1,60 @@
+// Font imports and stacks
+@font-face {
+    font-family: "Calibre-Thin";
+    src: url("../fonts/CalibreWeb-Thin.eot") format("embedded-opentype");
+    src: url("../fonts/CalibreWeb-Thin.woff2") format("woff2"),
+         url("../fonts/CalibreWeb-Thin.woff") format("woff"),
+         url("../fonts/Calibre-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Calibre-Light";
+    src: url("../fonts/CalibreWeb-Light.eot") format("embedded-opentype");
+    src: url("../fonts/CalibreWeb-Light.woff2") format("woff2"),
+         url("../fonts/CalibreWeb-Light.woff") format("woff"),
+         url("../fonts/Calibre-Light.ttf") format("trutype");
+}
+
+@font-face {
+    font-family: "Calibre-Regular";
+    src: url("../fonts/CalibreWeb-Regular.eot") format("embedded-opentype");
+    src: url("../fonts/CalibreWeb-Regular.woff2") format("woff2"),
+         url("../fonts/CalibreWeb-Regular.woff") format("woff"),
+         url("../fonts/Calibre-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Calibre-Medium";
+    src: url("../fonts/CalibreWeb-Medium.eot") format("embedded-opentype");
+    src: url("../fonts/CalibreWeb-Medium.woff2") format("woff2"),
+         url("../fonts/CalibreWeb-Medium.woff") format("woff"),
+         url("../fonts/Calibre-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Calibre-Bold";
+    src: url("../fonts/CalibreWeb-Bold.eot") format("embedded-opentype");
+    src: url("../fonts/CalibreWeb-Bold.woff2") format("woff2"),
+         url("../fonts/CalibreWeb-Bold.woff") format("woff"),
+         url("../fonts/Calibre-Bold.ttf") format("truetype");
+}
+
+$thin: "Calibre-Thin", Helvetica, Arial, sans-serif;
+$light: "Calibre-Light", Helvetica, Arial, sans-serif;
+$regular: "Calibre-Regular", Helvetica, Arial, sans-serif;
+$medium: "Calibre-Medium", Helvetica, Arial, sans-serif;
+$bold: "Calibre-Bold", Helvetica, Arial, sans-serif;
+
+// Colors
+$brand: #00b7e6;
+$white: #ffffff;
+$black: #262626;
+$black-light: #3a3a3a;
+$gray: #8c8c8c;
+$gray-dark: #656669;
+$gray-darker: #3b3b3b;
+$gray-light: #e1e1e1;
+$gray-lighter: #fafafa;
+$gray-alt: #b0b0b0;
+$stars: #fbb11c;
+$green: #96c656;

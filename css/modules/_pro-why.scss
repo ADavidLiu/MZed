@@ -1,0 +1,34 @@
+.pro-why {
+    text-align: center;
+    padding: 6.875rem 15px;
+    background-image: url("../images/pro-why.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    &__title {
+        font-size: 2.8125rem;
+        line-height: 3.875rem;
+        color: $white;
+        font-family: $thin;
+        margin-bottom: 5rem;
+    }
+    &__item {
+        & + & {
+            margin-top: 3rem;
+            @include atSmall {
+                margin-top: 0;
+            }
+        }
+    }
+    &__value {
+        font-size: 5.3125rem;
+        line-height: 3.875rem;
+        color: $white;
+        font-family: $thin;
+    }
+    &__label {
+        font-size: 1.4375rem;
+        font-family: $light;
+        color: $white;
+    }
+}

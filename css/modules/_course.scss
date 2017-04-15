@@ -1,0 +1,104 @@
+.course {
+    margin-top: 2.8125rem;
+    &--alt {
+        margin-top: 0;
+        & + & {
+            margin-top: 1.875rem;
+        }
+    }
+    &__video {
+        &-wrapper {
+            padding: 0;
+            @include atSmall {
+                padding-right: 10px;
+            }
+        }
+        &-img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+        }
+    }
+    &__info {
+        margin-top: 1.25rem;
+        padding: 0;
+        @include atSmall {
+            margin-top: 0;
+            padding-left: 10px;
+        }
+    }
+    &__title {
+        font-family: $medium;
+        font-size: 1.1875rem;
+        color: $black;
+        margin-bottom: 0.5rem;
+    }
+    &__description {
+        font-family: $light;
+        font-size: 1rem;
+        color: $black;
+    }
+    &__price {
+        font-family: $medium;
+        font-size: 2.6875rem;
+        color: $black;
+        margin: 0.5rem 0 0.3rem 0;
+    }
+    &__stars {
+        margin-left: 0;
+    }
+    &__star {
+        padding: 0 !important;
+        &-icon {
+            color: $stars;
+            font-size: 1.2rem;
+        }
+    }
+    &__rating {
+        font-size: 1.375rem;
+        font-family: $light;
+        color: $black;
+    }
+    &__ctas {
+        margin-top: 1rem;
+    }
+    &__cta {
+        height: 2.9375rem;
+        width: 12.5rem;
+        font-family: $medium;
+        font-size: 1.0625rem;
+        color: $white;
+        background-color: $brand;
+        padding: 0;
+        display: inline-block;
+        border-radius: 0.2rem;
+        text-align: center;
+        line-height: 2.9375rem;
+        border: 1px solid $brand;
+        margin-bottom: 0.5rem;
+        @include atMedium {
+            margin-bottom: 0;
+        }
+        &:link,
+        &:hover,
+        &:focus,
+        &:visited {
+            color: $white;
+            text-decoration: none;
+        }
+        &:first-child {
+            margin-right: 0.3rem;
+        }
+        &--outline {
+            border: 1px solid $green;
+            background-color: transparent;
+            color: $black;
+            &:link,
+            &:hover,
+            &:focus,
+            &:visited {
+                color: $black;
+            }
+        }
+    }
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MZed | Checkout</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header class="container-fluid header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 header__menu">
+                    <nav class="navbar header__navbar">
+                        <div class="navbar-header header__navbar-header">
+                            <button type="button" class="navbar-toggle header__btn" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar header__btn-bar"></span>
+                                <span class="icon-bar header__btn-bar"></span>
+                                <span class="icon-bar header__btn-bar"></span> 
+                            </button>
+                            <a class="navbar-brand header__brand" href="#"><img src="images/MZed-color.png" alt="Logo" class="header__logo"></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav header__list">
+                                <li><a href="#" class="header__link">About</a></li>
+                                <li><a href="#" class="header__link">Educators</a></li>
+                                <li>
+                                    <a href="#" class="dropdown-toggle header__link header__link--dropdown" data-toggle="dropdown">Courses <i class="fa fa-chevron-down header__link-arrow" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu header__sublist">
+                                        <li><a href="#" class="header__link header__link--sub">Category 1</a></li>
+                                        <li><a href="#" class="header__link header__link--sub">Category 2</a></li>
+                                        <li><a href="#" class="header__link header__link--sub">Category 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right header__list">
+                                <form class="navbar-form navbar-left header__form">
+                                    <div class="form-group header__search">
+                                        <i class="fa fa-search header__search-icon" aria-hidden="true"></i>
+                                        <input type="text" class="form-control header__search-input" placeholder="Search MZed Library">
+                                    </div>
+                                </form>
+                                <li><a href="#" class="header__link">Login</a></li>
+                                <li><a href="#" class="header__link">Sign in</a></li>
+                                <li><a href="#" class="header__link">Cart (0)</a></li>
+                                <li><a href="#" class="header__pro-link">MZed PRO</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container-fluid page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 page-header__title-wrapper">
+                    <h1 class="page-header__title page-header__title--alt">Checkout</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container container--small checkout">
+        <div class="row">
+            <div class="col-xs-12 checkout__wrapper">
+                <div class="col-xs-12 col-sm-4 checkout__column">
+                    <form class="checkout__form">
+                        <h2 class="checkout__form-title">Billing Address</h2>
+                        <div class="checkout__form-group">
+                            <label class="checkout__form-label">Email Address<span class="checkout__form-label--accent">*</span></label>
+                            <input type="email" class="checkout__form-input">
+                        </div>
+                        <div class="checkout__form-group">
+                            <label class="checkout__form-label">Company<span class="checkout__form-label--accent">*</span></label>
+                            <input type="text" class="checkout__form-input">
+                        </div>
+                        <div class="checkout__form-halves">
+                            <div class="checkout__form-group checkout__form-group--alt">
+                                <label class="checkout__form-label">First Name<span class="checkout__form-label--accent">*</span></label>
+                                <input type="text" class="checkout__form-input">
+                            </div>
+                            <div class="checkout__form-group checkout__form-group--alt">
+                                <label class="checkout__form-label">Last Name<span class="checkout__form-label--accent">*</span></label>
+                                <input type="text" class="checkout__form-input">
+                            </div>
+                        </div>
+                        <div class="checkout__form-group">
+                            <label class="checkout__form-label">Address<span class="checkout__form-label--accent">*</span></label>
+                            <input type="text" class="checkout__form-input">
+                        </div>
+                        <div class="checkout__form-group">
+                            <label class="checkout__form-label">Address (line 2)</label>
+                            <input type="text" class="checkout__form-input">
+                        </div>
+                        <div class="checkout__form-group">
+                            <label class="checkout__form-label">City<span class="checkout__form-label--accent">*</span></label>
+                            <input type="text" class="checkout__form-input">
+                        </div>
+                        <div class="checkout__form-halves">
+                            <div class="checkout__form-group checkout__form-group--alt">
+                                <label class="checkout__form-label">State<span class="checkout__form-label--accent">*</span></label>
+                                <input type="text" class="checkout__form-input">
+                            </div>
+                            <div class="checkout__form-group checkout__form-group--alt">
+                                <label class="checkout__form-label">Zip/Postal Code<span class="checkout__form-label--accent">*</span></label>
+                                <input type="text" class="checkout__form-input">
+                            </div>
+                        </div>
+                        <div class="checkout__form-group">
+                            <i class="fa fa-caret-down checkout__form-select-arrow" aria-hidden="true"></i>
+                            <label class="checkout__form-label">Country<span class="checkout__form-label--accent">*</span></label>
+                            <select class="checkout__form-input checkout__form-select">
+                                <option value="">Please select</option>
+                                <option value="Item 1">Item 1</option>
+                                <option value="Item 2">Item 2</option>
+                                <option value="Item 3">Item 3</option>
+                            </select>
+                        </div>
+                        <div class="checkout__form-group">
+                            <label class="checkout__form-label">Contact Number<span class="checkout__form-label--accent">*</span></label>
+                            <input type="text" class="checkout__form-input">
+                        </div>
+                        <div class="checkout__form-group">
+                            <label class="checkout__form-label">Order Comments</label>
+                            <input type="text" class="checkout__form-input">
+                        </div>
+                    </form>
+                    <div class="checkout__required-hint">
+                        <span class="checkout__form-label"><span class="checkout__form-label--accent">*</span>Required</span>
+                    </div>
+                    <div class="checkout__btn-wrapper checkout__btn-wrapper--right">
+                        <button class="checkout__btn checkout__btn--blue">Continue</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 checkout__column">
+                    <form class="checkout__form">
+                        <h2 class="checkout__form-title">Payment Method</h2>
+                        <div class="checkout__form-halves">
+                            <div class="checkout__form-group checkout__form-group--alt">
+                                <div class="checkout__payment-method">
+                                    <img src="images/cards.png" alt="Cards" class="img-responsive checkout__payment-method-img">
+                                </div>
+                            </div>
+                            <div class="checkout__form-group checkout__form-group--alt">
+                                <div class="checkout__payment-method">
+                                    <img src="images/paypal.png" alt="Paypal" class="img-responsive checkout__payment-method-img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout__form-group">
+                            <label class="checkout__form-label">Card Number<span class="checkout__form-label--accent">*</span></label>
+                            <input type="text" class="checkout__form-input">
+                        </div>
+                        <div class="checkout__form-halves">
+                            <div class="checkout__form-group checkout__form-group--alt">
+                                <label class="checkout__form-label">Expiry Date<span class="checkout__form-label--accent">*</span></label>
+                                <input type="text" class="checkout__form-input" placeholder="MM/YY">
+                            </div>
+                            <div class="checkout__form-group checkout__form-group--alt">
+                                <label class="checkout__form-label">CVV<span class="checkout__form-label--accent">*</span></label>
+                                <input type="text" class="checkout__form-input">
+                            </div>
+                        </div>
+                        <div class="checkout__form-group">
+                            <label class="checkout__form-label">Name on Card</label>
+                            <input type="text" class="checkout__form-input">
+                        </div>
+                        <div class="checkout__promo">
+                            <label class="checkout__form-label">Promo Code</label>
+                            <div class="checkout__promo-halves">
+                                <input type="text" class="checkout__form-input checkout__promo-input">
+                                <button class="checkout__btn checkout__btn--gray checkout__promo-btn">Apply</button>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="checkout__checks">
+                        <h4 class="checkout__checks-item"><i class="fa sidebar__filter-item-check fa-square-o" aria-hidden="true"></i> I would like to receive offers and news from our sponsors</h4>
+                        <h4 class="checkout__checks-item"><i class="fa sidebar__filter-item-check fa-square-o" aria-hidden="true"></i> I agree to the terms of service and adhere to them unconditionally</h4>
+                        <h4 class="checkout__checks-item"><i class="fa sidebar__filter-item-check fa-check-square-o" aria-hidden="true"></i> I am happy to enable auto-renew my annual MZed PRO account</h4>
+                    </div>
+                    <div class="checkout__btn-wrapper">
+                        <button class="checkout__btn checkout__btn--green checkout__btn--full">Place Order</button>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 col-sm-4 checkout__column">
+                    <form class="checkout__form">
+                        <div class="checkout__header">
+                            <h2 class="checkout__form-title">2 Items</h2>
+                            <a href="#" class="checkout__link">Edit</a>
+                        </div>
+                        <div class="checkout__order">
+                            <img src="images/order.png" alt="Order preview" class="img-responsive checkout__order-img">
+                            <div class="checkout__order-info">
+                                <h4 class="checkout__order-price">$299</h4>
+                                <p class="checkout__order-description">"Visual Storytelling 2" Training: Visual Style - Lighting &amp; Camera HD Download</p>
+                            </div>
+                            <div class="clearfix checkout__order-qty">
+                                <h3 class="checkout__order-qty-label">QTY:</h3>
+                                <input type="text" class="checkout__order-qty-input">
+                            </div>
+                            <div class="checkout__order-total">
+                                <h3 class="checkout__order-total-label">Total</h3>
+                                <h3 class="checkout__order-total-value">$300</h3>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid footer footer--alt">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 footer__column-wrapper--first">
+                    <div class="col-xs-12 col-sm-4 footer__column">
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">MZed Pro</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Courses</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Educators</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 footer__column">
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">FAQs</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Contact &amp; Support</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Content Licensing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 footer__column">
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="#" class="footer__list-link footer__list-link--accent">Learn about</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Filmmaking</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Photography</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="footer__social">
+                        <ul class="list-inline footer__social-list">
+                            <li class="footer__social-list-item"><a href="" class="footer__social-list-link"><i class="fa fa-facebook footer__social-list-icon" aria-hidden="true"></i></a></li>
+                            <li class="footer__social-list-item"><a href="" class="footer__social-list-link"><i class="fa fa-twitter footer__social-list-icon" aria-hidden="true"></i></a></li>
+                            <li class="footer__social-list-item"><a href="" class="footer__social-list-link"><i class="fa fa-instagram footer__social-list-icon" aria-hidden="true"></i></a></li>
+                            <li class="footer__social-list-item"><a href="" class="footer__social-list-link"><i class="fa fa-youtube-play footer__social-list-icon" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 footer__extra">
+                    <div class="col-xs-12 col-sm-8 footer__submenu">
+                        <ul class="list-inline footer__submenu-list">
+                            <li class="footer__submenu-list-item">© 2017 MZed Pty Ltd</li>
+                            <li class="footer__submenu-list-item"><a href="#" class="footer__submenu-list-link">Terms of Use</a></li>
+                            <li class="footer__submenu-list-item"><a href="#" class="footer__submenu-list-link">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 footer__logo-wrapper">
+                        <img src="images/MZed-w-Tag-black.png" alt="Logo" class="img-responsive footer__logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

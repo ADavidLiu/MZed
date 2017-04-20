@@ -1,0 +1,165 @@
+.cart {
+    padding: 2.8125rem 15px 10rem 15px;
+    &__column {
+        border: 1px solid $form-border;
+        padding: 1.875rem 1.25rem 1.25rem 1.25rem;
+    }
+    &__title {
+        font-size: 1.875rem;
+        color: $black;
+        font-family: $medium;
+        border-bottom: 1px solid $form-border;
+        padding-bottom: 1.875rem;
+    }
+    &__total-wrapper {
+        text-align: right;
+    }
+    &__total {
+        font-family: $medium;
+        color: $black;
+        font-size: 1.5rem;
+        margin-top: 1.18rem;
+    }
+    &__item {
+        padding: 1.25rem 0;
+        border-bottom: 1px solid $form-border;
+        position: relative;
+        @include atSmall {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-info {
+            padding-top: 1rem;
+            @include atSmall {
+                padding-top: 0;
+                padding-left: 1.875rem;
+            }
+        }
+        &-img {
+            width: 100%;
+            @include atSmall {
+                max-width: 260px;
+            }
+        }
+        &-price {
+            font-family: $medium;
+            color: $black;
+            font-size: 2rem;
+            @include atSmall {
+                font-size: 1.5rem;
+            }
+        }
+        &-description {
+            font-family: $light;
+            color: $black;
+            font-size: 1.1667rem;
+            margin: 0.5rem 0;
+            display: inline-block;
+            margin: 1.5rem 0;
+            @include atSmall {
+                font-size: 1rem;
+            }
+        }
+        &-remove {
+            position: absolute;
+            top: 2.5rem;
+            right: 1.25rem;
+            font-size: 2rem;
+            color: $black;
+            cursor: pointer;
+            @include atSmall {
+                top: 1.25rem;
+                right: 0;
+            }
+        }
+    }
+    &__payment-methods {
+        &-label {
+            font-family: $medium;
+            color: $black;
+            font-size: 1.333rem;
+            margin: 1rem 0;
+            @include atSmall {
+                font-size: 1rem;
+            }
+        }
+        &-img {
+            width: 85%;
+            max-width: 320px;
+        }
+    }
+    &__pro {
+        &-header {
+            margin-top: 1.25rem;
+            background-color: $brand;
+            padding: 1.875rem;
+            color: $white;
+            position: relative;
+        }
+        &-title {
+            font-family: $medium;
+            color: $white;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            &--accent {
+                font-family: $bold;
+            }
+        }
+        &-description {
+            font-family: $light;
+            color: $white;
+            font-size: 1.25rem;
+            max-width: 90%;
+            &--alt {
+                color: $black;
+                max-width: none;
+            }
+        }
+        &-btn {
+            margin-top: 1.5625rem;
+            font-family: $medium;
+            font-size: 1.41667rem;
+            height: 2.8125rem;
+            padding: 0 2rem;
+            border-radius: 0.2rem;
+            @include atSmall {
+                font-size: 1.0625rem;
+            }
+            &--white {
+                background-color: $white;
+                color: $black;
+            }
+            &--blue {
+                background-color: $brand;
+                color: $white;
+            }
+        }
+        &-arrow {
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            transform: translateY(-50%) rotate(180deg);
+            transition: all .25s;
+            cursor: pointer;
+            &--active {
+                transform: translateY(-50%);
+            }
+        }
+        &-content {
+            padding: 1.875rem;
+            background-color: $gray-lighter;
+        }
+        &-subtitle {
+            color: $black;
+            font-family: $medium;
+            font-size: 2rem;
+            margin-top: 1.5625rem;
+            @include atSmall {
+                font-size: 1.5rem;
+            }
+            &--accent {
+                font-family: $bold;
+            }
+        }
+    }
+}

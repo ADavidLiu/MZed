@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MZed | Educator</title>
+    <title>MZed | Cart</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/main.css">
@@ -72,71 +72,76 @@
         </div>
     </section>
 
-    <section class="container-fluid educator educator__header">
-        <div class="container container--small">
-            <div class="row">
-                <div class="col-xs-12 educator__info-wrapper">
-                    <h1 class="col-xs-12 educator__name">Art Vandelay</h1>
-                    <div class="col-xs-12 col-sm-10 col-md-8 educator__subinfo">
-                        <h4 class="educator__description">Filmmaker and Scriptwriter</h4>
-                        <ul class="list-inline educator__social-list">
-                            <li class="educator__social-list-item"><a href="" class="educator__social-list-link"><i class="fa fa-facebook educator__social-list-icon" aria-hidden="true"></i></a></li>
-                            <li class="educator__social-list-item"><a href="" class="educator__social-list-link"><i class="fa fa-twitter educator__social-list-icon" aria-hidden="true"></i></a></li>
-                            <li class="educator__social-list-item"><a href="" class="educator__social-list-link"><i class="fa fa-instagram educator__social-list-icon" aria-hidden="true"></i></a></li>
-                            <li class="educator__social-list-item"><a href="" class="educator__social-list-link"><i class="fa fa-youtube-play educator__social-list-icon" aria-hidden="true"></i></a></li>
-                        </ul>
-                        <a href="http://www.artvandelayindustries.com" class="educator__website">www.artvandelayindustries.com</a>
-                    </div>
-                    <div class="col-xs-12 educator__info">
-                        <img src="images/educator-img.png" alt="Educator" class="col-xs-12 col-sm-5 col-md-4 educator__img">
-                        <div class="col-xs-12 col-sm-7 col-md-8 educator__intro">
-                            <p class="educator__intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nibh sed sem blandit euismod. Aenean sem erat, mattis vitae scelerisque vel, malesuada quis massa. Proin suscipit ullamcorper turpis aliquet hendrerit. Donec accumsan metus vitae libero dignissim ornare. Vivamus tempus ex sed mauris ornare pellentesque. Sed sit amet magna et eros viverra dictum eget ut dolor. Donec pharetra semper nisi non mollis. Ut at maximus purus.</p>
-                            <p class="educator__intro-text">Vestibulum at euismod lorem. Mauris feugiat tincidunt urna ac sodales. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam tempor, neque nec lobortis dictum, diam massa sagittis erat, sed convallis augue diam eu arcu. Cras vitae tincidunt orci.</p>
+    <section class="container cart">
+        <div class="row">
+            <div class="col-xs-12 col-sm-8">
+                <div class="cart__column">
+                    <h2 class="cart__title">My Cart</h2>
+                    <div class="cart__items">
+                        <div class="cart__item">
+                            <img src="images/remove-icon.png" alt="Remove item" class="cart__item-remove">
+                            <img src="images/order.png" alt="Item preview" class="img-responsive cart__item-img">
+                            <div class="cart__item-info">
+                                <h3 class="cart__item-price">$299</h3>
+                                <p class="cart__item-description">"Visual Storytelling 2" Training: Visual Style - Lighting &amp; Camera HD Download</p>
+                                <div class="clearfix checkout__order-qty">
+                                    <h3 class="checkout__order-qty-label">QTY:</h3>
+                                    <input type="text" class="checkout__order-qty-input" value="1">
+                                </div>
+                            </div>
                         </div>
+                        <div class="cart__item">
+                            <img src="images/remove-icon.png" alt="Remove item" class="cart__item-remove">
+                            <img src="images/order.png" alt="Item preview" class="img-responsive cart__item-img">
+                            <div class="cart__item-info">
+                                <h3 class="cart__item-price">$299</h3>
+                                <p class="cart__item-description">"Visual Storytelling 2" Training: Visual Style - Lighting &amp; Camera HD Download</p>
+                                <div class="clearfix checkout__order-qty">
+                                    <h3 class="checkout__order-qty-label">QTY:</h3>
+                                    <input type="text" class="checkout__order-qty-input" value="1">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart__total-wrapper">
+                        <h3 class="cart__total">Total: $598</h3>
+                    </div>
+                </div>
+                
+                <div class="cart__pro">
+                    <div class="cart__pro-header">
+                        <img src="images/pro-arrow.png" alt="Show more" class="cart__pro-arrow">
+                        <h2 class="cart__pro-title">Save $149 on <span class="cart__pro-title--accent">MZed PRO!</span></h2>
+                        <p class="cart__pro-description">Add a year's Subscription of MZed Pro and gain access to the the library for only $149 - Save $100</p>
+                        <button class="cart__pro-btn cart__pro-btn--white">Add to cart</button>
+                    </div>
+                    <div class="cart__pro-content">
+                        <p class="cart__pro-description cart__pro-description--alt">With an MZed PRO Subscription you get...lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <h3 class="cart__pro-subtitle">For an additional $149 on <span class="cart__pro-subtitle--accent">MZed PRO!</span> Save $100</h3>
+                        <button class="cart__pro-btn cart__pro-btn--blue">Find out more</button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="container-fluid educator educator__courses">
-        <div class="container container--small">
-            <div class="row">
-                <div class="col-xs-12 educator__courses-header">
-                    <h2 class="educator__courses-title">Courses by Art Vandelay</h2>
-                    <div class="educator__filters-item">
-                        <h4 class="educator__filters-item-label">Sort by:</h4>
-                        <div class="educator__filters-item-dropdown-wrapper">
-                            <i class="fa fa-chevron-down educator__filters-item-arrow" aria-hidden="true"></i>
-                            <select class="educator__filters-item-dropdown">
-                                <option class="educator__filters-item-dropdown-option" value="All">Latest Release</option>
-                                <option class="educator__filters-item-dropdown-option" value="Value">Item 1</option>
-                                <option class="educator__filters-item-dropdown-option" value="Value">Item 2</option>
-                                <option class="educator__filters-item-dropdown-option" value="Value">Item 3</option>
-                            </select>
+            <div class="col-xs-12 col-sm-4">
+                <div class="cart__column">
+                    <h2 class="cart__title">Total</h2>
+                    <div class="checkout__promo checkout__promo--cart">
+                        <label class="checkout__form-label">Promo Code</label>
+                        <div class="checkout__promo-halves">
+                            <input type="text" class="checkout__form-input checkout__promo-input">
+                            <button class="checkout__btn checkout__btn--gray checkout__promo-btn">Apply</button>
                         </div>
                     </div>
-                </div>
-                <div class="col-xs-12 course">
-                    <div class="col-xs-12 col-sm-5 col-md-4 course__video-wrapper">
-                        <img src="images/preview-video.png" alt="Preview video" class="img-responsive course__video-img">
+                    <div class="checkout__order-total checkout__order-total--cart">
+                        <h3 class="checkout__order-total-label">Total</h3>
+                        <h3 class="checkout__order-total-value">$300</h3>
                     </div>
-                    <div class="col-xs-12 col-sm-7 col-md-8 course__info">
-                        <h2 class="course__title">"Visual Storytelling 2" Training: Visual Style - Lighting &amp; Camera HD Download</h2>
-                        <p class="course__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nibh sed sem blandit euismod...</p>
-                        <h3 class="course__price">$299</h3>
-                        <ul class="list-inline course__stars">
-                            <li class="course__star"><i class="fa fa-star-o course__star-icon" aria-hidden="true"></i></li>
-                            <li class="course__star"><i class="fa fa-star-o course__star-icon" aria-hidden="true"></i></li>
-                            <li class="course__star"><i class="fa fa-star-o course__star-icon" aria-hidden="true"></i></li>
-                            <li class="course__star"><i class="fa fa-star-o course__star-icon" aria-hidden="true"></i></li>
-                            <li class="course__star"><i class="fa fa-star-o course__star-icon" aria-hidden="true"></i></li>
-                            <li class="course__rating">4.5</li>
-                        </ul>
-                        <div class="course__ctas">
-                            <a href="#" class="course__cta course__cta--outline">Find out more</a>
-                            <a href="#" class="course__cta">Watch Now with MZed PRO</a>
-                        </div>
+                    <div class="checkout__btn-wrapper">
+                        <button class="checkout__btn checkout__btn--green checkout__btn--full">Checkout</button>
+                    </div>
+                    <div class="cart__payment-methods">
+                        <h4 class="cart__payment-methods-label">We accept:</h4>
+                        <img src="images/payment-methods.png" alt="Payment methods" class="img-responsive cart__payment-methods-img">
                     </div>
                 </div>
             </div>
@@ -200,7 +205,7 @@
 
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/cart.js"></script>
 
 </body>
 

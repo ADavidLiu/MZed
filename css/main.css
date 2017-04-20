@@ -107,6 +107,8 @@ button {
     14. EDUCATOR
     15. COURSE
     16. SIDEBAR
+    17. CHECKOUT
+    18. CART
 
 */
 /*------------- 1. HERO -------------*/
@@ -594,6 +596,9 @@ button {
       padding-right: 15px; } }
   .footer--alt {
     background-color: #fafafa; }
+  @media screen and (min-width: 768px) {
+    .footer__column-wrapper--first {
+      padding-left: 0; } }
   .footer__column {
     padding: 0; }
     @media screen and (min-width: 768px) {
@@ -905,6 +910,8 @@ button {
     font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
     font-size: 2.5rem;
     color: #262626; }
+    .page-header__title--alt {
+      padding: 0.625rem 0; }
   .page-header__filter {
     font-size: 2.125rem;
     margin-top: 2rem;
@@ -1167,7 +1174,7 @@ button {
     .course__cta:first-child {
       margin-right: 0.3rem; }
     .course__cta--outline {
-      border: 1px solid #96c656;
+      border: 1px solid #80c653;
       background-color: transparent;
       color: #262626; }
       .course__cta--outline:link, .course__cta--outline:hover, .course__cta--outline:focus, .course__cta--outline:visited {
@@ -1217,3 +1224,406 @@ button {
     -webkit-transform: translateY(2px);
     -ms-transform: translateY(2px);
     transform: translateY(2px); }
+
+/*------------- 17. CHECKOUT -------------*/
+.checkout {
+  background-color: #ffffff;
+  padding: 1.875rem 0 6.25rem 0; }
+  .checkout__column + .checkout__column {
+    margin-top: 3rem; }
+    @media screen and (min-width: 768px) {
+      .checkout__column + .checkout__column {
+        margin-top: 0; } }
+  @media screen and (min-width: 1200px) {
+    .checkout__wrapper {
+      padding: 0; } }
+  .checkout__required-hint {
+    margin: 1.25rem 0;
+    text-align: right; }
+  .checkout__btn-wrapper--right {
+    text-align: right; }
+  .checkout__btn {
+    padding: 0 2.5rem;
+    height: 3.3333rem;
+    border-radius: 0.2rem;
+    color: #ffffff;
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    font-size: 1.4166rem; }
+    @media screen and (min-width: 768px) {
+      .checkout__btn {
+        height: 2.8125rem;
+        font-size: 1.0625rem; } }
+    .checkout__btn--blue {
+      background-color: #00b7e6; }
+    .checkout__btn--gray {
+      background-color: #8c8c8c;
+      height: 2.5rem; }
+    .checkout__btn--green {
+      background-color: #80c653; }
+    .checkout__btn--full {
+      width: 100%; }
+  .checkout__form-halves, .checkout__promo-halves {
+    margin: 1rem 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .checkout__promo-halves {
+    margin: 0; }
+  .checkout__form {
+    border: 1px solid #bbbbbb;
+    padding: 1.667rem; }
+    @media screen and (min-width: 768px) {
+      .checkout__form {
+        padding: 1.25rem; } }
+    .checkout__form-group {
+      position: relative; }
+      .checkout__form-group + .checkout__form-group {
+        margin-top: 1rem; }
+      .checkout__form-group--alt {
+        width: 50%; }
+        .checkout__form-group--alt + .checkout__form-group--alt {
+          margin-top: 0;
+          margin-left: 1.5625rem; }
+    .checkout__form-title {
+      font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+      color: #262626;
+      font-size: 2.1667rem;
+      margin-bottom: 1.5625rem;
+      display: inline-block; }
+      @media screen and (min-width: 768px) {
+        .checkout__form-title {
+          font-size: 1.625rem; } }
+    .checkout__form-label {
+      font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
+      font-size: 1.333rem;
+      color: #262626;
+      margin-bottom: 0.7rem; }
+      @media screen and (min-width: 768px) {
+        .checkout__form-label {
+          font-size: 1rem; } }
+      .checkout__form-label--accent {
+        color: #ff0000; }
+    .checkout__form-input {
+      display: block;
+      width: 100%;
+      height: 3.333rem;
+      border: 1px solid #8c8c8c;
+      padding: 0 1rem;
+      color: #262626;
+      font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
+      font-size: 1.2rem;
+      border-radius: 0.2rem; }
+      @media screen and (min-width: 768px) {
+        .checkout__form-input {
+          height: 2.5rem; } }
+    .checkout__form-select {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background-color: transparent;
+      font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
+      color: #a7a7a7; }
+      .checkout__form-select:focus {
+        outline: none; }
+      .checkout__form-select-arrow {
+        position: absolute;
+        bottom: 1.665rem;
+        -webkit-transform: translateY(50%);
+        -ms-transform: translateY(50%);
+        transform: translateY(50%);
+        right: 1rem;
+        color: #262626;
+        pointer-events: none; }
+        @media screen and (min-width: 768px) {
+          .checkout__form-select-arrow {
+            bottom: 1.25rem; } }
+  .checkout__payment-method {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 3.333rem;
+    border: 1px solid #8c8c8c;
+    padding: 0 1rem;
+    border-radius: 0.2rem;
+    position: relative; }
+    @media screen and (min-width: 768px) {
+      .checkout__payment-method {
+        height: 2.5rem; } }
+    .checkout__payment-method-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      max-width: 85%;
+      height: auto; }
+  .checkout__promo {
+    margin-top: 1.875rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #bbbbbb; }
+    .checkout__promo--cart {
+      margin-top: 0;
+      border-top: 0;
+      border-bottom: 1px solid #bbbbbb;
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem; }
+    .checkout__promo-btn {
+      width: 10rem;
+      height: 3.333rem;
+      padding: 0;
+      margin-left: 0.5rem; }
+      @media screen and (min-width: 768px) {
+        .checkout__promo-btn {
+          height: auto; } }
+  .checkout__checks-item {
+    cursor: pointer;
+    font-family: "Calibre-Light", Helvetica, Arial, sans-serif;
+    color: #262626;
+    margin-top: 0.5rem;
+    font-size: 1.333rem;
+    line-height: 2rem; }
+    @media screen and (min-width: 768px) {
+      .checkout__checks-item {
+        font-size: 1rem;
+        line-height: 1.5rem; } }
+    .checkout__checks-item:first-child {
+      margin-top: 1rem; }
+    .checkout__checks-item:last-child {
+      margin-bottom: 2rem; }
+  .checkout__link {
+    font-size: 1.333rem;
+    color: #262626;
+    font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
+    text-decoration: underline;
+    float: right;
+    -webkit-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    transform: translateY(5px); }
+    @media screen and (min-width: 768px) {
+      .checkout__link {
+        font-size: 1rem; } }
+    .checkout__link:link, .checkout__link:hover, .checkout__link:focus, .checkout__link:active {
+      text-decoration: underline;
+      color: #262626; }
+  .checkout__header {
+    border-bottom: 1px solid #bbbbbb; }
+  .checkout__order {
+    padding: 1.333rem 0 0.9rem 0; }
+    @media screen and (min-width: 768px) {
+      .checkout__order {
+        padding: 1rem 0 0.5rem 0; } }
+    .checkout__order-img {
+      width: 100%;
+      height: auto; }
+    .checkout__order-description {
+      font-family: "Calibre-Light", Helvetica, Arial, sans-serif;
+      color: #262626;
+      font-size: 1.1667rem;
+      margin: 0.5rem 0;
+      display: inline-block; }
+      @media screen and (min-width: 768px) {
+        .checkout__order-description {
+          font-size: 0.875rem; } }
+    .checkout__order-price {
+      font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+      color: #262626;
+      font-size: 1.6667rem;
+      margin-top: 1rem; }
+      @media screen and (min-width: 768px) {
+        .checkout__order-price {
+          font-size: 1.25rem; } }
+    .checkout__order-qty-label {
+      font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+      color: #262626;
+      font-size: 1.1667rem;
+      float: left;
+      margin-right: 0.5rem;
+      -webkit-transform: translateY(20%);
+      -ms-transform: translateY(20%);
+      transform: translateY(20%); }
+      @media screen and (min-width: 768px) {
+        .checkout__order-qty-label {
+          font-size: 0.875rem;
+          -webkit-transform: translateY(45%);
+          -ms-transform: translateY(45%);
+          transform: translateY(45%); } }
+    .checkout__order-qty-input {
+      width: 1.35rem;
+      height: 1.7rem;
+      border: 1px solid #bbbbbb;
+      float: left;
+      font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+      color: #262626;
+      font-size: 1.333rem;
+      text-align: center; }
+      @media screen and (min-width: 768px) {
+        .checkout__order-qty-input {
+          font-size: 1rem; } }
+    .checkout__order-total {
+      padding-top: 1rem;
+      border-top: 1px solid #bbbbbb;
+      margin-top: 1rem; }
+      .checkout__order-total--cart {
+        margin-top: 0;
+        border-top: 0;
+        padding-top: 0;
+        margin-bottom: 1.5rem; }
+      .checkout__order-total-label, .checkout__order-total-value {
+        font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+        color: #262626;
+        font-size: 2.1667rem;
+        display: inline-block; }
+        @media screen and (min-width: 768px) {
+          .checkout__order-total-label, .checkout__order-total-value {
+            font-size: 1.625rem; } }
+      .checkout__order-total-value {
+        float: right; }
+
+/*------------- 18. CART -------------*/
+.cart {
+  padding: 2.8125rem 15px 10rem 15px; }
+  .cart__column {
+    border: 1px solid #bbbbbb;
+    padding: 1.875rem 1.25rem 1.25rem 1.25rem; }
+  .cart__title {
+    font-size: 1.875rem;
+    color: #262626;
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    border-bottom: 1px solid #bbbbbb;
+    padding-bottom: 1.875rem; }
+  .cart__total-wrapper {
+    text-align: right; }
+  .cart__total {
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    color: #262626;
+    font-size: 1.5rem;
+    margin-top: 1.18rem; }
+  .cart__item {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid #bbbbbb;
+    position: relative; }
+    @media screen and (min-width: 768px) {
+      .cart__item {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between; } }
+    .cart__item-info {
+      padding-top: 1rem; }
+      @media screen and (min-width: 768px) {
+        .cart__item-info {
+          padding-top: 0;
+          padding-left: 1.875rem; } }
+    .cart__item-img {
+      width: 100%; }
+      @media screen and (min-width: 768px) {
+        .cart__item-img {
+          max-width: 260px; } }
+    .cart__item-price {
+      font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+      color: #262626;
+      font-size: 2rem; }
+      @media screen and (min-width: 768px) {
+        .cart__item-price {
+          font-size: 1.5rem; } }
+    .cart__item-description {
+      font-family: "Calibre-Light", Helvetica, Arial, sans-serif;
+      color: #262626;
+      font-size: 1.1667rem;
+      margin: 0.5rem 0;
+      display: inline-block;
+      margin: 1.5rem 0; }
+      @media screen and (min-width: 768px) {
+        .cart__item-description {
+          font-size: 1rem; } }
+    .cart__item-remove {
+      position: absolute;
+      top: 2.5rem;
+      right: 1.25rem;
+      font-size: 2rem;
+      color: #262626;
+      cursor: pointer; }
+      @media screen and (min-width: 768px) {
+        .cart__item-remove {
+          top: 1.25rem;
+          right: 0; } }
+  .cart__payment-methods-label {
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    color: #262626;
+    font-size: 1.333rem;
+    margin: 1rem 0; }
+    @media screen and (min-width: 768px) {
+      .cart__payment-methods-label {
+        font-size: 1rem; } }
+  .cart__payment-methods-img {
+    width: 85%;
+    max-width: 320px; }
+  .cart__pro-header {
+    margin-top: 1.25rem;
+    background-color: #00b7e6;
+    padding: 1.875rem;
+    color: #ffffff;
+    position: relative; }
+  .cart__pro-title {
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+    .cart__pro-title--accent {
+      font-family: "Calibre-Bold", Helvetica, Arial, sans-serif; }
+  .cart__pro-description {
+    font-family: "Calibre-Light", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    font-size: 1.25rem;
+    max-width: 90%; }
+    .cart__pro-description--alt {
+      color: #262626;
+      max-width: none; }
+  .cart__pro-btn {
+    margin-top: 1.5625rem;
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    font-size: 1.41667rem;
+    height: 2.8125rem;
+    padding: 0 2rem;
+    border-radius: 0.2rem; }
+    @media screen and (min-width: 768px) {
+      .cart__pro-btn {
+        font-size: 1.0625rem; } }
+    .cart__pro-btn--white {
+      background-color: #ffffff;
+      color: #262626; }
+    .cart__pro-btn--blue {
+      background-color: #00b7e6;
+      color: #ffffff; }
+  .cart__pro-arrow {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    -webkit-transform: translateY(-50%) rotate(180deg);
+    -ms-transform: translateY(-50%) rotate(180deg);
+    transform: translateY(-50%) rotate(180deg);
+    transition: all .25s;
+    cursor: pointer; }
+    .cart__pro-arrow--active {
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+  .cart__pro-content {
+    padding: 1.875rem;
+    background-color: #fafafa; }
+  .cart__pro-subtitle {
+    color: #262626;
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    font-size: 2rem;
+    margin-top: 1.5625rem; }
+    @media screen and (min-width: 768px) {
+      .cart__pro-subtitle {
+        font-size: 1.5rem; } }
+    .cart__pro-subtitle--accent {
+      font-family: "Calibre-Bold", Helvetica, Arial, sans-serif; }

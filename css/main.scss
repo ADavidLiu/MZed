@@ -32,6 +32,8 @@
     14. EDUCATOR
     15. COURSE
     16. SIDEBAR
+    17. CHECKOUT
+    18. CART
 
 */
 
@@ -114,3 +116,13 @@
 /*------------- 16. SIDEBAR -------------*/
 
 @import "modules/_sidebar.scss";
+
+
+/*------------- 17. CHECKOUT -------------*/
+
+@import "modules/_checkout.scss";
+
+
+/*------------- 18. CART -------------*/
+
+@import "modules/_cart.scss";

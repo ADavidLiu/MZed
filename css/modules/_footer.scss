@@ -8,6 +8,13 @@
     &--alt {
         background-color: $gray-lighter;
     }
+    &__column-wrapper {
+        &--first {
+            @include atSmall {
+                padding-left: 0;
+            }
+        }
+    }
     &__column {
         padding: 0;
         @include atSmall {

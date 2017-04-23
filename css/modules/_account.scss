@@ -235,4 +235,36 @@
             }
         }
     }
+    &__modal {
+        &-close {
+            position: absolute;
+            top: 2.2rem;
+            right: 2rem;
+            cursor: pointer;
+            height: 1rem;
+            width: auto;
+        }
+        &-content {
+            box-shadow: none;
+            border: 0;
+            border-radius: 0;
+            padding: 2rem;
+            max-width: 415px;
+            margin: 0 auto;
+        }
+        &-form {
+            border: 0;
+            padding: 0;
+            max-width: 265px;
+            &--full {
+                max-width: none;
+            }
+        }
+        &-btns {
+            padding: 3rem 0 0 0;
+            &--alt {
+                padding-top: 1.5rem;
+            }
+        }
+    }
 }

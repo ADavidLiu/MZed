@@ -12,6 +12,126 @@
 
 <body>
 
+    <div id="paymentModal" class="modal fade account__modal" role="dialog">
+        <div class="modal-dialog account__modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content account__modal-content">
+                <div class="account__modal-wrapper">
+                    <form class="checkout__form account__modal-form">
+                        <h2 class="checkout__form-title checkout__form-title--alt">Payment Method</h2>
+                        <img src="images/remove-icon.png" alt="Close" class="account__modal-close" data-dismiss="modal">
+                        <div class="checkout__form-halves checkout__form-halves--alt">
+                            <div class="checkout__form-group checkout__form-group--alt checkout__form-group--close">
+                                <div class="checkout__payment-method">
+                                    <img src="images/cards.png" alt="Cards" class="img-responsive checkout__payment-method-img">
+                                </div>
+                            </div>
+                            <div class="checkout__form-group checkout__form-group--alt checkout__form-group--close">
+                                <div class="checkout__payment-method">
+                                    <img src="images/paypal.png" alt="Paypal" class="img-responsive checkout__payment-method-img">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout__form-group">
+                            <label class="checkout__form-label">Card Number</label>
+                            <input type="text" class="checkout__form-input">
+                        </div>
+                        <div class="checkout__form-halves">
+                            <div class="checkout__form-group checkout__form-group--alt">
+                                <label class="checkout__form-label">Expiry Date</label>
+                                <input type="text" class="checkout__form-input" placeholder="MM/YY">
+                            </div>
+                            <div class="checkout__form-group checkout__form-group--alt">
+                                <label class="checkout__form-label">CVV</label>
+                                <input type="text" class="checkout__form-input">
+                            </div>
+                        </div>
+                        <div class="checkout__form-group">
+                            <label class="checkout__form-label">Name on Card</label>
+                            <input type="text" class="checkout__form-input">
+                        </div>
+                    </form>
+                    <div class="account__modal-btns">
+                        <button class="account__info-btn" data-dismiss="modal">Cancel</button>
+                        <button class="account__info-btn account__info-btn--alt" data-dismiss="modal">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="billingModal" class="modal fade account__modal" role="dialog">
+        <div class="modal-dialog account__modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content account__modal-content">
+                <div class="account__modal-wrapper">
+                    <form class="checkout__form account__modal-form account__modal-form--full">
+                        <h2 class="checkout__form-title">Billing Address</h2>
+                        <img src="images/remove-icon.png" alt="Close" class="account__modal-close" data-dismiss="modal">
+                        <div class="checkout__form-halves">
+                            <div class="checkout__form-group checkout__form-group--alt">
+                                <label class="checkout__form-label">First Name</label>
+                                <input type="text" class="checkout__form-input">
+                            </div>
+                            <div class="checkout__form-group checkout__form-group--alt">
+                                <label class="checkout__form-label">Last Name</label>
+                                <input type="text" class="checkout__form-input">
+                            </div>
+                        </div>
+                        <div class="checkout__form-group">
+                            <label class="checkout__form-label">Email Address</label>
+                            <input type="email" class="checkout__form-input">
+                        </div>
+                        <div class="checkout__form-group">
+                            <label class="checkout__form-label">Company</label>
+                            <input type="text" class="checkout__form-input">
+                        </div>
+                        <div class="checkout__form-group">
+                            <label class="checkout__form-label">Address</label>
+                            <input type="text" class="checkout__form-input">
+                        </div>
+                        <div class="checkout__form-group">
+                            <label class="checkout__form-label">Address (line 2)</label>
+                            <input type="text" class="checkout__form-input">
+                        </div>
+                        <div class="checkout__form-group">
+                            <label class="checkout__form-label">City</label>
+                            <input type="text" class="checkout__form-input">
+                        </div>
+                        <div class="checkout__form-halves">
+                            <div class="checkout__form-group checkout__form-group--alt">
+                                <label class="checkout__form-label">State</label>
+                                <input type="text" class="checkout__form-input">
+                            </div>
+                            <div class="checkout__form-group checkout__form-group--alt">
+                                <label class="checkout__form-label">Zip/Postal Code</label>
+                                <input type="text" class="checkout__form-input">
+                            </div>
+                        </div>
+                        <div class="checkout__form-group">
+                            <i class="fa fa-caret-down checkout__form-select-arrow" aria-hidden="true"></i>
+                            <label class="checkout__form-label">Country</label>
+                            <select class="checkout__form-input checkout__form-select">
+                                <option value="">Please select</option>
+                                <option value="Item 1">Item 1</option>
+                                <option value="Item 2">Item 2</option>
+                                <option value="Item 3">Item 3</option>
+                            </select>
+                        </div>
+                        <div class="checkout__form-group">
+                            <label class="checkout__form-label">Contact Number</label>
+                            <input type="text" class="checkout__form-input">
+                        </div>
+                    </form>
+                    <div class="account__modal-btns account__modal-btns--alt">
+                        <button class="account__info-btn" data-dismiss="modal">Cancel</button>
+                        <button class="account__info-btn account__info-btn--alt" data-dismiss="modal">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header class="container-fluid header header--no-page-header">
         <div class="container">
             <div class="row">
@@ -109,7 +229,7 @@
                                 <img src="images/master-card.png" alt="MasterCard" class="account__info-img">
                                 <h5 class="account__text account__text--small account__info-label">Mastercard ending with 9999</h5>
                             </div>
-                            <button class="account__info-btn">Edit</button>
+                            <button class="account__info-btn" data-toggle="modal" data-target="#paymentModal">Edit</button>
                         </div>
                         <div class="account__info">
                             <h4 class="account__text account__text--accent">Billing Address</h4>
@@ -118,7 +238,7 @@
                                 </p>
                                 <p class="account__text account__text--small account__text--paragraphs"><a href="mailto:scott.emerton@dorsia.com" class="account__text--link">scott.emerton@dorsia.com</a> <br>0412 123 123</p>
                             </div>
-                            <button class="account__info-btn">Edit</button>
+                            <button class="account__info-btn" data-toggle="modal" data-target="#billingModal">Edit</button>
                         </div>
                     </div>
                     <div class="account__content-group">

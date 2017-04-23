@@ -1282,6 +1282,8 @@ button {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between; }
+    .checkout__form-halves--alt, .checkout__promo-halves--alt {
+      margin: 1rem 0 3rem 0; }
   .checkout__promo-halves {
     margin: 0; }
   .checkout__form {
@@ -1299,6 +1301,8 @@ button {
         .checkout__form-group--alt + .checkout__form-group--alt {
           margin-top: 0;
           margin-left: 1.5625rem; }
+      .checkout__form-group--close + .checkout__form-group--close {
+        margin-left: 0.5rem; }
     .checkout__form-title {
       font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
       color: #262626;
@@ -1308,6 +1312,8 @@ button {
       @media screen and (min-width: 768px) {
         .checkout__form-title {
           font-size: 1.625rem; } }
+      .checkout__form-title--alt {
+        margin-bottom: 0; }
     .checkout__form-label {
       font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
       font-size: 1.333rem;
@@ -2109,3 +2115,27 @@ button {
     .account__table-link:link, .account__table-link:hover, .account__table-link:focus, .account__table-link:visited {
       color: #00b7e6;
       text-decoration: underline; }
+  .account__modal-close {
+    position: absolute;
+    top: 2.2rem;
+    right: 2rem;
+    cursor: pointer;
+    height: 1rem;
+    width: auto; }
+  .account__modal-content {
+    box-shadow: none;
+    border: 0;
+    border-radius: 0;
+    padding: 2rem;
+    max-width: 415px;
+    margin: 0 auto; }
+  .account__modal-form {
+    border: 0;
+    padding: 0;
+    max-width: 265px; }
+    .account__modal-form--full {
+      max-width: none; }
+  .account__modal-btns {
+    padding: 3rem 0 0 0; }
+    .account__modal-btns--alt {
+      padding-top: 1.5rem; }

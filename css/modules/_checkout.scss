@@ -53,6 +53,9 @@
         margin: 1rem 0;
         display: flex;
         justify-content: space-between;
+        &--alt {
+            margin: 1rem 0 3rem 0;
+        }
     }
     &__promo-halves {
         margin: 0;
@@ -75,6 +78,11 @@
                     margin-left: 1.5625rem;
                 }
             }
+            &--close {
+                &+& {
+                    margin-left: 0.5rem;
+                }
+            }
         }
         &-title {
             font-family: $medium;
@@ -84,6 +92,9 @@
             display: inline-block;
             @include atSmall {
                 font-size: 1.625rem;
+            }
+            &--alt {
+                margin-bottom: 0;
             }
         }
         &-label {

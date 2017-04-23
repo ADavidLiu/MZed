@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MZed | Billing &amp; membership</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <header class="container-fluid header header--no-page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 header__menu">
+                    <nav class="navbar header__navbar">
+                        <div class="navbar-header header__navbar-header">
+                            <button type="button" class="navbar-toggle header__btn" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar header__btn-bar"></span>
+                                <span class="icon-bar header__btn-bar"></span>
+                                <span class="icon-bar header__btn-bar"></span> 
+                            </button>
+                            <a class="navbar-brand header__brand" href="#"><img src="images/MZed-color.png" alt="Logo" class="header__logo"></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav header__list">
+                                <li><a href="#" class="header__link">About</a></li>
+                                <li><a href="#" class="header__link">Educators</a></li>
+                                <li>
+                                    <a href="#" class="dropdown-toggle header__link header__link--dropdown" data-toggle="dropdown">Courses <i class="fa fa-chevron-down header__link-arrow" aria-hidden="true"></i></a>
+                                    <ul class="dropdown-menu header__sublist">
+                                        <li><a href="#" class="header__link header__link--sub">Category 1</a></li>
+                                        <li><a href="#" class="header__link header__link--sub">Category 2</a></li>
+                                        <li><a href="#" class="header__link header__link--sub">Category 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right header__list">
+                                <form class="navbar-form navbar-left header__form">
+                                    <div class="form-group header__search">
+                                        <i class="fa fa-search header__search-icon" aria-hidden="true"></i>
+                                        <input type="text" class="form-control header__search-input" placeholder="Search MZed Library">
+                                    </div>
+                                </form>
+                                <li><a href="#" class="header__link">Login</a></li>
+                                <li><a href="#" class="header__link">Sign in</a></li>
+                                <li><a href="#" class="header__link">Cart (0)</a></li>
+                                <li><a href="#" class="header__pro-link">MZed PRO</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="container-fluid page-header page-header--alt">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 page-header__title-wrapper">
+                    <h1 class="page-header__title page-header__title--alt">My Account</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container account">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-2 col-md-offset-1 account__menu">
+                <ul class="account__menu-list">
+                    <li class="account__menu-item"><a href="#" class="account__menu-link">Account Details</a></li>
+                    <li class="account__menu-item"><a href="#" class="account__menu-link account__menu-link--active">Billing &amp; Membership</a></li>
+                    <li class="account__menu-item"><a href="#" class="account__menu-link">Password</a></li>
+                    <li class="account__menu-item"><a href="#" class="account__menu-link">Email Notifications</a></li>
+                    <li class="account__menu-item"><a href="#" class="account__menu-link">Refer a friend</a></li>
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-9 col-md-8">
+                <div class="account__content">
+                    <div class="account__content-group">
+                        <h3 class="account__title">Membership</h3>
+                        <div class="clearfix"></div>
+                        <div class="account__info">
+                            <h4 class="account__text account__text--accent">Membership</h4>
+                            <p class="account__text account__text--small">MZed PRO</p>
+                        </div>
+                        <div class="account__info">
+                            <h4 class="account__text account__text--accent">Status</h4>
+                            <p class="account__text account__text--small">Active</p>
+                        </div>
+                        <div class="account__info">
+                            <h4 class="account__text account__text--accent">Expiration date</h4>
+                            <p class="account__text account__text--small">Subscription auto-renews; your next bill date is <span class="account__text account__text--accent">Friday, 28th March, 2017.</span></p>
+                        </div>
+                        <div class="account__info">
+                            <button class="account__info-btn">Change plan</button>
+                            <button class="account__info-btn account__info-btn--alt">Extend plan</button>
+                        </div>
+                    </div>
+                    <div class="account__content-group">
+                        <h3 class="account__title">Billing Settings</h3>
+                        <div class="clearfix"></div>
+                        <div class="account__info">
+                            <h4 class="account__text account__text--accent">Payment Method</h4>
+                            <div class="clearfix account__info-content">
+                                <img src="images/master-card.png" alt="MasterCard" class="account__info-img">
+                                <h5 class="account__text account__text--small account__info-label">Mastercard ending with 9999</h5>
+                            </div>
+                            <button class="account__info-btn">Edit</button>
+                        </div>
+                        <div class="account__info">
+                            <h4 class="account__text account__text--accent">Billing Address</h4>
+                            <div class="clearfix account__info-content">
+                                <p class="account__text account__text--small account__text--paragraphs">Scott Emerton <br>123 John Street <br>Janeplace, New South Wales 9999 <br>Australia
+                                </p>
+                                <p class="account__text account__text--small account__text--paragraphs"><a href="mailto:scott.emerton@dorsia.com" class="account__text--link">scott.emerton@dorsia.com</a> <br>0412 123 123</p>
+                            </div>
+                            <button class="account__info-btn">Edit</button>
+                        </div>
+                    </div>
+                    <div class="account__content-group">
+                        <h3 class="account__title">Billing History</h3>
+                        <div class="clearfix"></div>
+                        <div class="account__table-wrapper table-responsive">
+                            <table class="table account__table">
+                                <tr class="account__table-row">
+                                    <td class="account__table-data account__table-data--title">Order No.</td>
+                                    <td class="account__table-data account__table-data--title">Date</td>
+                                    <td class="account__table-data account__table-data--title">Total</td>
+                                    <td class="account__table-data account__table-data--title">Receipt</td>
+                                </tr>
+                                <tr class="account__table-row">
+                                    <td class="account__table-data">999999</td>
+                                    <td class="account__table-data">31/12/2017</td>
+                                    <td class="account__table-data">$399</td>
+                                    <td class="account__table-data"><a href="#" class="account__table-link">PDF Receipt</a></td>
+                                </tr>
+                                <tr class="account__table-row">
+                                    <td class="account__table-data">999999</td>
+                                    <td class="account__table-data">31/12/2017</td>
+                                    <td class="account__table-data">$399</td>
+                                    <td class="account__table-data"><a href="#" class="account__table-link">PDF Receipt</a></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid footer footer--alt">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 footer__column-wrapper--first">
+                    <div class="col-xs-12 col-sm-4 footer__column">
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">MZed Pro</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Courses</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Educators</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 footer__column">
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">FAQs</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Contact &amp; Support</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Content Licensing</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 footer__column">
+                        <ul class="footer__list">
+                            <li class="footer__list-item"><a href="#" class="footer__list-link footer__list-link--accent">Learn about</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Filmmaking</a></li>
+                            <li class="footer__list-item"><a href="#" class="footer__list-link">Photography</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <div class="footer__social">
+                        <ul class="list-inline footer__social-list">
+                            <li class="footer__social-list-item"><a href="" class="footer__social-list-link"><i class="fa fa-facebook footer__social-list-icon" aria-hidden="true"></i></a></li>
+                            <li class="footer__social-list-item"><a href="" class="footer__social-list-link"><i class="fa fa-twitter footer__social-list-icon" aria-hidden="true"></i></a></li>
+                            <li class="footer__social-list-item"><a href="" class="footer__social-list-link"><i class="fa fa-instagram footer__social-list-icon" aria-hidden="true"></i></a></li>
+                            <li class="footer__social-list-item"><a href="" class="footer__social-list-link"><i class="fa fa-youtube-play footer__social-list-icon" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 footer__extra">
+                    <div class="col-xs-12 col-sm-8 footer__submenu">
+                        <ul class="list-inline footer__submenu-list">
+                            <li class="footer__submenu-list-item">© 2017 MZed Pty Ltd</li>
+                            <li class="footer__submenu-list-item"><a href="#" class="footer__submenu-list-link">Terms of Use</a></li>
+                            <li class="footer__submenu-list-item"><a href="#" class="footer__submenu-list-link">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 footer__logo-wrapper">
+                        <img src="images/MZed-w-Tag-black.png" alt="Logo" class="img-responsive footer__logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

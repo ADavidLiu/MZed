@@ -4,6 +4,9 @@
     &--pro {
         background-color: $black;
     }
+    &--no-page-header {
+        border-bottom: 2px solid $gray;
+    }
     &__menu {
         padding: 0;
     }

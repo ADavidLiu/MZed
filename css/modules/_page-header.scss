@@ -3,6 +3,9 @@
     padding: 1.875rem 0;
     border: 0 !important;
     margin: 0 !important;
+    &--alt {
+        background-color: $white;
+    }
     &__breadcrumbs {
         &-item {
             padding: 0 0.3rem !important;

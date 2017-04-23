@@ -34,6 +34,9 @@
     16. SIDEBAR
     17. CHECKOUT
     18. CART
+    19. LOGIN
+    20. SIGNUP
+    21. ACCOUNT
 
 */
 
@@ -126,3 +129,18 @@
 /*------------- 18. CART -------------*/
 
 @import "modules/_cart.scss";
+
+
+/*------------- 19. LOGIN -------------*/
+
+@import "modules/_login.scss";
+
+
+/*------------- 20. SIGNUP -------------*/
+
+@import "modules/_signup.scss";
+
+
+/*------------- 21. ACCOUNT -------------*/
+
+@import "modules/_account.scss";

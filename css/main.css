@@ -87,6 +87,11 @@ button {
 .container--small {
   max-width: 1020px; }
 
+.overlay {
+  padding: 5rem 0 6.25rem 0; }
+  .overlay--active {
+    background-color: rgba(128, 128, 128, 0.6); }
+
 /*------------- MODULES IMPORT -------------*/
 /*------------- TABLE OF CONTENTS -------------*/
 /*
@@ -109,6 +114,9 @@ button {
     16. SIDEBAR
     17. CHECKOUT
     18. CART
+    19. LOGIN
+    20. SIGNUP
+    21. ACCOUNT
 
 */
 /*------------- 1. HERO -------------*/
@@ -263,6 +271,8 @@ button {
   background-color: #ffffff; }
   .header--pro {
     background-color: #262626; }
+  .header--no-page-header {
+    border-bottom: 2px solid #8c8c8c; }
   .header__menu {
     padding: 0; }
   .header__navbar {
@@ -876,6 +886,8 @@ button {
   padding: 1.875rem 0;
   border: 0 !important;
   margin: 0 !important; }
+  .page-header--alt {
+    background-color: #ffffff; }
   .page-header__breadcrumbs-item {
     padding: 0 0.3rem !important;
     position: relative; }
@@ -1627,3 +1639,473 @@ button {
         font-size: 1.5rem; } }
     .cart__pro-subtitle--accent {
       font-family: "Calibre-Bold", Helvetica, Arial, sans-serif; }
+
+/*------------- 19. LOGIN -------------*/
+.login {
+  width: 100%;
+  max-width: 367px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 1rem; }
+  .login__title {
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    font-size: 2.1667rem;
+    color: #262626;
+    text-align: center;
+    margin-bottom: 1rem; }
+    @media screen and (min-width: 768px) {
+      .login__title {
+        font-size: 1.625rem; } }
+    .login__title--alt {
+      margin-bottom: 3.125rem; }
+  .login__form-group + .login__form-group {
+    margin-top: 0.5rem; }
+  .login__form-label {
+    font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
+    font-size: 1.333rem;
+    color: #262626; }
+    @media screen and (min-width: 768px) {
+      .login__form-label {
+        font-size: 1rem; } }
+  .login__form-input {
+    height: 3.333rem;
+    border: 1px solid #8c8c8c;
+    border-radius: 0.2rem;
+    display: block;
+    width: 100%;
+    padding: 0 1rem;
+    font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
+    color: #8c8c8c;
+    font-size: 1.333rem; }
+    @media screen and (min-width: 768px) {
+      .login__form-input {
+        font-size: 1rem;
+        height: 2.5rem; } }
+  .login__form-btn {
+    display: block;
+    width: 100%;
+    margin-top: 1.6667rem;
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    background-color: #262626;
+    border-radius: 0.2rem;
+    height: 4rem;
+    font-size: 1.41666rem; }
+    @media screen and (min-width: 768px) {
+      .login__form-btn {
+        font-size: 1.0625rem;
+        height: 3rem;
+        margin-top: 1.25rem; } }
+  .login__form-help {
+    display: inline-block;
+    font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
+    font-size: 1.16667rem;
+    color: #262626;
+    margin: 1rem 0 0 0; }
+    @media screen and (min-width: 768px) {
+      .login__form-help {
+        margin: 0.75rem 0 0 0;
+        font-size: 1rem; } }
+    .login__form-help > .login__form-help {
+      margin-top: 0; }
+    .login__form-help:link, .login__form-help:hover, .login__form-help:focus, .login__form-help:visited {
+      color: #262626;
+      text-decoration: underline; }
+    .login__form-help--no-underline {
+      text-decoration: none; }
+      .login__form-help--no-underline:link, .login__form-help--no-underline:hover, .login__form-help--no-underline:focus, .login__form-help--no-underline:visited {
+        text-decoration: none; }
+    .login__form-help--blue {
+      color: #00b7e6; }
+      .login__form-help--blue:link, .login__form-help--blue:hover, .login__form-help--blue:focus, .login__form-help--blue:visited {
+        color: #00b7e6;
+        text-decoration: underline; }
+  .login__divider {
+    width: 100%;
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    font-size: 1.41667rem;
+    color: #262626;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative; }
+    @media screen and (min-width: 768px) {
+      .login__divider {
+        font-size: 1rem; } }
+    .login__divider-label {
+      padding: 0 0.5rem;
+      background-color: #ffffff;
+      position: relative;
+      z-index: 2; }
+    .login__divider:before {
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: #bbbbbb;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+  .login__social {
+    padding-bottom: 1.5rem; }
+    .login__social-title {
+      font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+      font-size: 2.1667rem;
+      color: #262626;
+      text-align: center;
+      margin-bottom: 1rem;
+      margin-top: 0.5rem; }
+      @media screen and (min-width: 768px) {
+        .login__social-title {
+          font-size: 1.625rem; } }
+    .login__social-list {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+    .login__social-item {
+      width: 33.33%; }
+      .login__social-item + .login__social-item {
+        margin-left: 0.5rem; }
+    .login__social-img {
+      width: 100%;
+      height: auto; }
+
+/*------------- 20. SIGNUP -------------*/
+.signup {
+  width: 100%;
+  max-width: 367px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 1rem; }
+  .signup__title {
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    font-size: 2.1667rem;
+    color: #262626;
+    text-align: center;
+    margin-bottom: 1rem; }
+    @media screen and (min-width: 768px) {
+      .signup__title {
+        font-size: 1.625rem; } }
+    .signup__title--alt {
+      margin-bottom: 3.125rem; }
+  .signup__form-halves {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  .signup__form-group + .signup__form-group {
+    margin-top: 0.5rem; }
+  .signup__form-group--alt {
+    margin-bottom: 0.5rem; }
+    .signup__form-group--alt + .signup__form-group--alt {
+      margin-top: 0;
+      margin-left: 1.875rem; }
+  .signup__form-label {
+    font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
+    font-size: 1.333rem;
+    color: #262626; }
+    @media screen and (min-width: 768px) {
+      .signup__form-label {
+        font-size: 1rem; } }
+  .signup__form-input {
+    height: 3.333rem;
+    border: 1px solid #8c8c8c;
+    border-radius: 0.2rem;
+    display: block;
+    width: 100%;
+    padding: 0 1rem;
+    font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
+    color: #8c8c8c;
+    font-size: 1.333rem; }
+    @media screen and (min-width: 768px) {
+      .signup__form-input {
+        font-size: 1rem;
+        height: 2.5rem; } }
+  .signup__form-btn {
+    display: block;
+    width: 100%;
+    margin-top: 1.6667rem;
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    background-color: #262626;
+    border-radius: 0.2rem;
+    height: 4rem;
+    font-size: 1.41666rem; }
+    @media screen and (min-width: 768px) {
+      .signup__form-btn {
+        font-size: 1.0625rem;
+        height: 3rem;
+        margin-top: 1.25rem; } }
+    .signup__form-btn--blue {
+      background-color: #00b7e6;
+      margin-bottom: 0.5rem; }
+  .signup__form-help {
+    display: inline-block;
+    font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
+    font-size: 1.16667rem;
+    color: #262626;
+    margin: 1rem 0 0 0; }
+    @media screen and (min-width: 768px) {
+      .signup__form-help {
+        margin: 0.75rem 0 0 0;
+        font-size: 1rem; } }
+    .signup__form-help > .signup__form-help {
+      margin-top: 0; }
+    .signup__form-help:link, .signup__form-help:hover, .signup__form-help:focus, .signup__form-help:visited {
+      color: #262626;
+      text-decoration: underline; }
+    .signup__form-help--no-underline {
+      text-decoration: none; }
+      .signup__form-help--no-underline:link, .signup__form-help--no-underline:hover, .signup__form-help--no-underline:focus, .signup__form-help--no-underline:visited {
+        text-decoration: none; }
+    .signup__form-help--blue {
+      color: #00b7e6; }
+      .signup__form-help--blue:link, .signup__form-help--blue:hover, .signup__form-help--blue:focus, .signup__form-help--blue:visited {
+        color: #00b7e6;
+        text-decoration: underline; }
+  .signup__divider {
+    width: 100%;
+    text-align: center;
+    position: relative; }
+    @media screen and (min-width: 768px) {
+      .signup__divider {
+        font-size: 1rem; } }
+    .signup__divider-label {
+      padding: 0 0.5rem;
+      background-color: #ffffff;
+      position: relative;
+      z-index: 2;
+      font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+      font-size: 1.41667rem;
+      color: #262626;
+      text-transform: uppercase; }
+    .signup__divider:before {
+      content: "";
+      height: 1px;
+      width: 100%;
+      background-color: #bbbbbb;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      left: 0;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%); }
+  .signup__social {
+    padding-bottom: 1.5rem; }
+    .signup__social-title {
+      font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+      font-size: 2.1667rem;
+      color: #262626;
+      text-align: center;
+      margin-bottom: 1rem;
+      margin-top: 0.5rem; }
+      @media screen and (min-width: 768px) {
+        .signup__social-title {
+          font-size: 1.625rem; } }
+    .signup__social-list {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+      justify-content: space-between; }
+    .signup__social-item {
+      width: 33.33%; }
+      .signup__social-item + .signup__social-item {
+        margin-left: 0.5rem; }
+    .signup__social-img {
+      width: 100%;
+      height: auto; }
+
+/*------------- 21. ACCOUNT -------------*/
+.account {
+  padding-bottom: 4.16667rem; }
+  @media screen and (min-width: 768px) {
+    .account {
+      padding-bottom: 3.125rem; } }
+  .account__menu {
+    margin-bottom: 2rem; }
+    @media screen and (min-width: 768px) {
+      .account__menu {
+        margin-bottom: 0; } }
+    .account__menu-link {
+      font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
+      font-size: 1.5rem;
+      line-height: 2.6667rem;
+      color: #262626; }
+      @media screen and (min-width: 768px) {
+        .account__menu-link {
+          font-size: 1.125rem;
+          line-height: 2rem; } }
+      .account__menu-link:link, .account__menu-link:hover, .account__menu-link:focus, .account__menu-link:visited {
+        color: #262626;
+        text-decoration: none; }
+      .account__menu-link--active {
+        color: #00b7e6; }
+        .account__menu-link--active:link, .account__menu-link--active:hover, .account__menu-link--active:focus, .account__menu-link--active:visited {
+          color: #00b7e6; }
+  .account__content {
+    padding: 2.5rem;
+    border: 1px solid #bbbbbb;
+    max-width: 675px; }
+    @media screen and (min-width: 768px) {
+      .account__content {
+        padding: 1.875rem; } }
+    .account__content-wrapper {
+      max-width: 265px; }
+  .account__content-group + .account__content-group {
+    margin-top: 2.5rem; }
+  .account__title {
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    font-size: 2.1667rem;
+    color: #262626;
+    margin-bottom: 1rem; }
+    @media screen and (min-width: 768px) {
+      .account__title {
+        font-size: 1.625rem; } }
+  .account__form-group {
+    margin-top: 1rem; }
+  .account__form-label {
+    font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
+    font-size: 1.333rem;
+    color: #262626; }
+    @media screen and (min-width: 768px) {
+      .account__form-label {
+        font-size: 1rem; } }
+  .account__form-input {
+    height: 3.333rem;
+    border: 1px solid #8c8c8c;
+    border-radius: 0.2rem;
+    display: block;
+    width: 100%;
+    padding: 0 1rem;
+    font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
+    color: #8c8c8c;
+    font-size: 1.333rem; }
+    @media screen and (min-width: 768px) {
+      .account__form-input {
+        font-size: 1rem;
+        height: 2.5rem; } }
+  .account__form-btn {
+    display: block;
+    width: 60%;
+    margin-top: 2rem;
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    color: #ffffff;
+    background-color: #00b7e6;
+    border-radius: 0.2rem;
+    height: 4rem;
+    font-size: 1.41666rem; }
+    @media screen and (min-width: 768px) {
+      .account__form-btn {
+        font-size: 1.0625rem;
+        height: 3rem; } }
+  .account__check {
+    cursor: pointer; }
+    .account__check-icon {
+      color: #262626;
+      margin: 0.2rem; }
+    .account__check-label {
+      font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
+      color: #262626;
+      font-size: 1.5rem; }
+      @media screen and (min-width: 768px) {
+        .account__check-label {
+          font-size: 1.125rem; } }
+  .account__text {
+    font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
+    color: #262626;
+    font-size: 1.5rem; }
+    @media screen and (min-width: 768px) {
+      .account__text {
+        font-size: 1.125rem; } }
+    .account__text--paragraphs + .account__text--paragraphs {
+      margin-top: 1rem; }
+    .account__text--paragraphs:last-child {
+      margin-bottom: 0.5rem; }
+    .account__text--link {
+      color: #262626;
+      text-decoration: none; }
+      .account__text--link:link, .account__text--link:hover, .account__text--link:focus, .account__text--link:visited {
+        color: #262626;
+        text-decoration: none; }
+    .account__text--accent {
+      font-family: "Calibre-Medium", Helvetica, Arial, sans-serif; }
+    .account__text--small {
+      font-size: 1.333rem;
+      margin-top: 0.3rem; }
+      @media screen and (min-width: 768px) {
+        .account__text--small {
+          font-size: 1rem; } }
+  .account__info {
+    margin-top: 1rem; }
+    .account__info-btn {
+      font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+      color: #ffffff;
+      background-color: #8c8c8c;
+      border-radius: 0.2rem;
+      height: 4rem;
+      font-size: 1.41666rem;
+      width: 10.166rem;
+      margin-bottom: 0.5rem; }
+      @media screen and (min-width: 768px) {
+        .account__info-btn {
+          width: 7.625rem;
+          font-size: 1.0625rem;
+          height: 3rem; } }
+      .account__info-btn--alt {
+        background-color: #00b7e6; }
+    .account__info-content {
+      max-width: 310px;
+      margin: 1rem 0;
+      border-radius: 0.2rem;
+      padding: 0.8333rem;
+      border: 1px solid #bbbbbb; }
+      @media screen and (min-width: 768px) {
+        .account__info-content {
+          padding: 0.625rem; } }
+    .account__info-img {
+      float: left;
+      margin-right: 1rem; }
+      @media screen and (min-width: 768px) {
+        .account__info-img {
+          margin-right: 0.75rem; } }
+    .account__info-label {
+      display: inline-block;
+      float: left;
+      line-height: 38px;
+      margin-top: 0; }
+  .account__table-wrapper {
+    border: 0;
+    margin: 0; }
+  .account__table-data {
+    padding: 1rem 1rem 1rem 0 !important;
+    min-width: 7.5rem;
+    border-top: 0 !important;
+    border-bottom: 1px solid #8c8c8c;
+    color: #262626;
+    font-size: 1.333rem;
+    font-family: "Calibre-Regular", Helvetica, Arial, sans-serif; }
+    @media screen and (min-width: 768px) {
+      .account__table-data {
+        font-size: 1rem; } }
+    .account__table-data--title {
+      font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+      font-size: 1.5rem; }
+      @media screen and (min-width: 768px) {
+        .account__table-data--title {
+          font-size: 1.125rem; } }
+  .account__table-link {
+    color: #00b7e6;
+    text-decoration: underline; }
+    .account__table-link:link, .account__table-link:hover, .account__table-link:focus, .account__table-link:visited {
+      color: #00b7e6;
+      text-decoration: underline; }

@@ -29,7 +29,24 @@
             color: $brand;
             font-size: 1.5rem;
             margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        &-link {
+            color: $gray;
+            font-size: 1.4166rem;
+            font-family: $light;
+            text-decoration: underline;
             margin-bottom: 2.5rem;
+            display: inline-block;
+            @include atSmall {
+                font-size: 1.0625rem;
+            }
+            &:link,
+            &:hover,
+            &:focus,
+            &:visited {
+                color: $gray;
+            }
         }
     }
     &__control {
@@ -71,6 +88,20 @@
         &.active {
             background-color: $white !important;
             border: 2px solid $brand;
+        }
+        &--alt {
+            margin: 0 0.5rem !important;
+        }
+    }
+    &__stars {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+    &__star {
+        padding: 0 !important;
+        &-icon {
+            color: $stars;
+            font-size: 1.2rem;
         }
     }
 }

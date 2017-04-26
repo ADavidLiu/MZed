@@ -37,6 +37,8 @@
     19. LOGIN
     20. SIGNUP
     21. ACCOUNT
+    22. PRODUCT
+    23. ACCORDION
 
 */
 
@@ -144,3 +146,13 @@
 /*------------- 21. ACCOUNT -------------*/
 
 @import "modules/_account.scss";
+
+
+/*------------- 22. PRODUCT -------------*/
+
+@import "modules/_product.scss";
+
+
+/*------------- 23. ACCORDION -------------*/
+
+@import "modules/_accordion.scss";

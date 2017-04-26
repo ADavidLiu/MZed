@@ -1,0 +1,82 @@
+.accordion {
+    margin-top: 0.5rem;
+    border: 1px solid $form-border;
+    border-top: 0;
+    &__group {
+        margin-bottom: 0;
+    }
+    &__panel {
+        border-radius: 0 !important;
+        border: 0 !important;
+        box-shadow: none !important;
+        margin-top: 0 !important;
+        border-top: 1px solid $form-border !important;
+        &-header {
+            background-color: $accordion-bg;
+            border: 0 !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            outline: none !important;
+            position: relative;
+            padding: 0.8rem 15px;
+        }
+        &-icon-wrapper {
+            position: absolute;
+            top: 0.6rem;
+            left: 0;
+            display: inline-block;
+            height: 1.5rem;
+            width: 1.5rem;
+            float: left;
+            border: 1px solid $black;
+            border-radius: 100%;
+            @include atSmall {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &-icon {
+            color: black;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &-toggle-wrapper {
+            position: relative;
+        }
+        &-toggle {
+            font-family: $medium !important;
+            color: $black !important;
+            font-size: 1.8333rem !important;
+            margin-left: calc(1rem + 20px);
+            text-decoration: none !important;
+            @include atSmall {
+                font-size: 1.375rem !important;
+            }
+        }
+        &-body {
+            border: 0 !important;
+            border-top: 1px solid $form-border !important;
+            padding: 1.25rem 1rem;
+        }
+        &-info {
+            margin-top: 1rem;
+            @include atMedium {
+                margin-top: 0;
+                position: absolute;
+                top: 50%;
+                right: -5px;
+                transform: translateY(-50%);
+            }
+            &-item {
+                color: $black;
+                font-family: $medium;
+                font-size: 1.41666rem;
+                @include atSmall {
+                    font-size: 1.0625rem;
+                }
+            }
+        }
+    }
+}

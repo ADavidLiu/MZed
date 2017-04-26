@@ -6,6 +6,9 @@
             margin-top: 1.875rem;
         }
     }
+    &--inv {
+        
+    }
     &__video {
         &-wrapper {
             padding: 0;
@@ -32,17 +35,28 @@
         font-size: 1.1875rem;
         color: $black;
         margin-bottom: 0.5rem;
+        &--alt {
+            color: $white;
+            font-size: 1.8125rem;
+        }
     }
     &__description {
         font-family: $light;
         font-size: 1rem;
         color: $black;
+        &--alt {
+            color: $white;
+        }
     }
     &__price {
         font-family: $medium;
         font-size: 2.6875rem;
         color: $black;
         margin: 0.5rem 0 0.3rem 0;
+        &--alt {
+            color: $white;
+            font-size: 3.12875rem;
+        }
     }
     &__stars {
         margin-left: 0;
@@ -58,9 +72,22 @@
         font-size: 1.375rem;
         font-family: $light;
         color: $black;
+        &--alt {
+            color: $white;
+        }
+        &--gray {
+            color: $black;
+        }
     }
     &__ctas {
         margin-top: 1rem;
+        &--alt {
+            margin-top: 1rem;
+            position: relative;
+            & + & {
+                margin-top: 12px;
+            }
+        }
     }
     &__cta {
         height: 2.9375rem;
@@ -98,6 +125,62 @@
             &:focus,
             &:visited {
                 color: $black;
+            }
+        }
+        &--white {
+            color: $white;
+            &:link,
+            &:hover,
+            &:focus,
+            &:visited {
+                color: $white;
+            }
+        }
+        &--alt {
+            @include atSmall {
+                margin-bottom: 0;
+            }    
+        }
+        &--small {
+            width: 6.875rem;
+        }
+        &--gray {
+            color: $gray;
+            &:link,
+            &:hover,
+            &:focus,
+            &:visited {
+                color: $gray;
+            }
+        }
+        &--border-gray {
+            border-color: $gray;
+        }
+        &-description {
+            display: block;
+            max-width: 80%;
+            font-size: 1.41666rem;
+            font-family: $light;
+            color: $gray-alt-light;
+            text-decoration: underline;
+            @include atSmall {
+                font-size: 1rem;
+                margin-left: 0.5rem;
+                display: inline-block;
+                width: calc(100% - 13.8rem);
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+            }
+            &:link,
+            &:hover,
+            &:focus,
+            &:visited {
+                color: $gray-alt-light;
+            }
+            &--accent {
+                font-family: $bold;
             }
         }
     }

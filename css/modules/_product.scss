@@ -1,0 +1,202 @@
+.product {
+    border-bottom: 1px solid  $gray;
+    &__header {
+        background-color: $black;
+        padding: 3.125rem 0;
+    }
+    &__content-wrapper {
+        padding: 2.5rem 15px;
+        @include atSmall {
+            padding: 1.875rem 15px;
+        }
+    }
+    &__quick-info {
+        &-item {
+            @include atSmall {
+                float: left;
+            }
+            & + & {
+                margin-top: 1rem;
+                @include atSmall {
+                    margin-top: 0;
+                    margin-left: 3.75rem;
+                }
+            }
+        }
+        &-value {
+            font-family: $bold;
+            font-size: 3.41666rem;
+            color: $gray;
+            @include atSmall {
+                font-size: 2.5625rem;
+            }
+        }
+        &-title {
+            font-family: $medium;
+            color: $gray;
+            font-size: 1.8333rem;
+            margin-bottom: 0.5rem;
+            @include atSmall {
+                font-size: 1.375rem;
+            }
+        }
+    }
+    &__title {
+        font-family: $medium;
+        color: $black;
+        font-size: 1.8333rem;
+        padding: 2.1875rem 0 1rem 0;
+        @include atSmall {
+            font-size: 1.375rem;
+        }
+        &--accent {
+            font-family: $bold;
+        }
+        &--alt {
+            padding-top: 0;
+        }
+    }
+    &__text {
+        font-family: $regular;
+        color: $black;
+        font-size: 1.5rem;
+        @include atSmall {
+            font-size: 1.125rem;
+        }
+        & + & {
+            margin-top: 1rem;
+        }
+        &--accent {
+            font-family: $medium;
+        }
+    }
+    &__link {
+        font-family: $medium;
+        color: $brand;
+        font-size: 1.5rem;
+        text-decoration: underline;
+        display: inline-block;
+        margin: 1rem 0 0 0;
+        @include atSmall {
+            font-size: 1.125rem;
+        }
+        &:link,
+        &:hover,
+        &:focus,
+        &:visited {
+            color: $brand;
+        }
+    }
+    &__sidebar {
+        margin-top: 2rem;
+        @include atSmall {
+            margin-top: 0;
+        }
+        @include atMedium {
+            padding-left: 30px;
+        }
+    }
+    &__educator {
+        &-img {
+            margin-right: 1rem;
+            float: left;
+            max-width: 45%;
+        }
+        &-copy {
+            float: left;
+        }
+        &-name,
+        &-number {
+            color: $black;
+            font-family: $medium;
+            font-size: 1.5rem;
+            @include atSmall {
+                font-size: 1.125rem;
+            }
+        }
+        &-number {
+            text-decoration: underline;
+            color: $black;
+            &:link,
+            &:hover,
+            &:focus,
+            &:visited {
+                color: $black;
+            }
+        }
+        &-subinfo {
+            margin-bottom: 0.5rem;
+            color: $gray;
+            font-family: $medium;
+            font-size: 1.333rem;
+            @include atSmall {
+                font-size: 1rem;
+            }
+        }
+        &-description {
+            margin-top: 1rem;
+        }
+    }
+    &__reviews {
+        margin-top: 3rem;
+        &-btn {
+            margin-top: 1.5rem;
+        }
+    }
+    &__review {
+        & + & {
+            margin-top: 1.5rem;
+        }
+        &-stars {
+            margin-bottom: 1rem;
+        }
+    }
+    &__related {
+        padding: 2.5rem 15px 3.75rem 15px;
+        &-courses {
+            @include atSmall {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        &-item {
+            width: 100%;
+            @include atSmall {
+                width: 33.33%;
+            }
+            & + & {
+                margin-top: 3rem;
+                @include atSmall {
+                    margin-top: 0;
+                    margin-left: 1.25rem;
+                }
+            }
+        }
+        &-img {
+            margin-top: 0.5rem;
+        }
+        &-title,
+        &-author{
+            font-family: $medium;
+            font-size: 1.333rem;
+            @include atSmall {
+                font-size: 1rem;
+            }
+        }
+        &-title {
+            color: $black;
+            margin-top: 1rem;
+            &:link,
+            &:hover,
+            &:focus,
+            &:visited {
+                color: $black;
+                text-decoration: none;
+            }
+        }
+        &-author {
+            color: $gray;
+            margin: 0.5rem 0;
+        }
+    }
+}

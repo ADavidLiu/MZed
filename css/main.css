@@ -117,6 +117,8 @@ button {
     19. LOGIN
     20. SIGNUP
     21. ACCOUNT
+    22. PRODUCT
+    23. ACCORDION
 
 */
 /*------------- 1. HERO -------------*/
@@ -840,7 +842,19 @@ button {
       color: #00b7e6;
       font-size: 1.5rem;
       margin-top: 2rem;
-      margin-bottom: 2.5rem; }
+      margin-bottom: 1.5rem; }
+    .testimonials__item-link {
+      color: #8c8c8c;
+      font-size: 1.4166rem;
+      font-family: "Calibre-Light", Helvetica, Arial, sans-serif;
+      text-decoration: underline;
+      margin-bottom: 2.5rem;
+      display: inline-block; }
+      @media screen and (min-width: 768px) {
+        .testimonials__item-link {
+          font-size: 1.0625rem; } }
+      .testimonials__item-link:link, .testimonials__item-link:hover, .testimonials__item-link:focus, .testimonials__item-link:visited {
+        color: #8c8c8c; }
   .testimonials__control {
     opacity: 1 !important;
     background: none !important;
@@ -879,6 +893,16 @@ button {
     .testimonials__indicator.active {
       background-color: #ffffff !important;
       border: 2px solid #00b7e6; }
+    .testimonials__indicator--alt {
+      margin: 0 0.5rem !important; }
+  .testimonials__stars {
+    margin-left: 0;
+    margin-bottom: 1rem; }
+  .testimonials__star {
+    padding: 0 !important; }
+    .testimonials__star-icon {
+      color: #fbb11c;
+      font-size: 1.2rem; }
 
 /*------------- 13. PAGE-HEADER -------------*/
 .page-header {
@@ -1141,15 +1165,23 @@ button {
     font-size: 1.1875rem;
     color: #262626;
     margin-bottom: 0.5rem; }
+    .course__title--alt {
+      color: #ffffff;
+      font-size: 1.8125rem; }
   .course__description {
     font-family: "Calibre-Light", Helvetica, Arial, sans-serif;
     font-size: 1rem;
     color: #262626; }
+    .course__description--alt {
+      color: #ffffff; }
   .course__price {
     font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
     font-size: 2.6875rem;
     color: #262626;
     margin: 0.5rem 0 0.3rem 0; }
+    .course__price--alt {
+      color: #ffffff;
+      font-size: 3.12875rem; }
   .course__stars {
     margin-left: 0; }
   .course__star {
@@ -1161,8 +1193,17 @@ button {
     font-size: 1.375rem;
     font-family: "Calibre-Light", Helvetica, Arial, sans-serif;
     color: #262626; }
+    .course__rating--alt {
+      color: #ffffff; }
+    .course__rating--gray {
+      color: #262626; }
   .course__ctas {
     margin-top: 1rem; }
+    .course__ctas--alt {
+      margin-top: 1rem;
+      position: relative; }
+      .course__ctas--alt + .course__ctas--alt {
+        margin-top: 12px; }
   .course__cta {
     height: 2.9375rem;
     width: 12.5rem;
@@ -1191,6 +1232,44 @@ button {
       color: #262626; }
       .course__cta--outline:link, .course__cta--outline:hover, .course__cta--outline:focus, .course__cta--outline:visited {
         color: #262626; }
+    .course__cta--white {
+      color: #ffffff; }
+      .course__cta--white:link, .course__cta--white:hover, .course__cta--white:focus, .course__cta--white:visited {
+        color: #ffffff; }
+    @media screen and (min-width: 768px) {
+      .course__cta--alt {
+        margin-bottom: 0; } }
+    .course__cta--small {
+      width: 6.875rem; }
+    .course__cta--gray {
+      color: #8c8c8c; }
+      .course__cta--gray:link, .course__cta--gray:hover, .course__cta--gray:focus, .course__cta--gray:visited {
+        color: #8c8c8c; }
+    .course__cta--border-gray {
+      border-color: #8c8c8c; }
+    .course__cta-description {
+      display: block;
+      max-width: 80%;
+      font-size: 1.41666rem;
+      font-family: "Calibre-Light", Helvetica, Arial, sans-serif;
+      color: #e8e8e8;
+      text-decoration: underline; }
+      @media screen and (min-width: 768px) {
+        .course__cta-description {
+          font-size: 1rem;
+          margin-left: 0.5rem;
+          display: inline-block;
+          width: calc(100% - 13.8rem);
+          position: absolute;
+          top: 50%;
+          right: 0;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%); } }
+      .course__cta-description:link, .course__cta-description:hover, .course__cta-description:focus, .course__cta-description:visited {
+        color: #e8e8e8; }
+      .course__cta-description--accent {
+        font-family: "Calibre-Bold", Helvetica, Arial, sans-serif; }
 
 /*------------- 16. SIDEBAR -------------*/
 .sidebar__filter + .sidebar__filter {
@@ -2139,3 +2218,235 @@ button {
     padding: 3rem 0 0 0; }
     .account__modal-btns--alt {
       padding-top: 1.5rem; }
+
+/*------------- 22. PRODUCT -------------*/
+.product {
+  border-bottom: 1px solid #8c8c8c; }
+  .product__header {
+    background-color: #262626;
+    padding: 3.125rem 0; }
+  .product__content-wrapper {
+    padding: 2.5rem 15px; }
+    @media screen and (min-width: 768px) {
+      .product__content-wrapper {
+        padding: 1.875rem 15px; } }
+  @media screen and (min-width: 768px) {
+    .product__quick-info-item {
+      float: left; } }
+  .product__quick-info-item + .product__quick-info-item {
+    margin-top: 1rem; }
+    @media screen and (min-width: 768px) {
+      .product__quick-info-item + .product__quick-info-item {
+        margin-top: 0;
+        margin-left: 3.75rem; } }
+  .product__quick-info-value {
+    font-family: "Calibre-Bold", Helvetica, Arial, sans-serif;
+    font-size: 3.41666rem;
+    color: #8c8c8c; }
+    @media screen and (min-width: 768px) {
+      .product__quick-info-value {
+        font-size: 2.5625rem; } }
+  .product__quick-info-title {
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    color: #8c8c8c;
+    font-size: 1.8333rem;
+    margin-bottom: 0.5rem; }
+    @media screen and (min-width: 768px) {
+      .product__quick-info-title {
+        font-size: 1.375rem; } }
+  .product__title {
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    color: #262626;
+    font-size: 1.8333rem;
+    padding: 2.1875rem 0 1rem 0; }
+    @media screen and (min-width: 768px) {
+      .product__title {
+        font-size: 1.375rem; } }
+    .product__title--accent {
+      font-family: "Calibre-Bold", Helvetica, Arial, sans-serif; }
+    .product__title--alt {
+      padding-top: 0; }
+  .product__text {
+    font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
+    color: #262626;
+    font-size: 1.5rem; }
+    @media screen and (min-width: 768px) {
+      .product__text {
+        font-size: 1.125rem; } }
+    .product__text + .product__text {
+      margin-top: 1rem; }
+    .product__text--accent {
+      font-family: "Calibre-Medium", Helvetica, Arial, sans-serif; }
+  .product__link {
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    color: #00b7e6;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 1rem 0 0 0; }
+    @media screen and (min-width: 768px) {
+      .product__link {
+        font-size: 1.125rem; } }
+    .product__link:link, .product__link:hover, .product__link:focus, .product__link:visited {
+      color: #00b7e6; }
+  .product__sidebar {
+    margin-top: 2rem; }
+    @media screen and (min-width: 768px) {
+      .product__sidebar {
+        margin-top: 0; } }
+    @media screen and (min-width: 992px) {
+      .product__sidebar {
+        padding-left: 30px; } }
+  .product__educator-img {
+    margin-right: 1rem;
+    float: left;
+    max-width: 45%; }
+  .product__educator-copy {
+    float: left; }
+  .product__educator-name, .product__educator-number {
+    color: #262626;
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    font-size: 1.5rem; }
+    @media screen and (min-width: 768px) {
+      .product__educator-name, .product__educator-number {
+        font-size: 1.125rem; } }
+  .product__educator-number {
+    text-decoration: underline;
+    color: #262626; }
+    .product__educator-number:link, .product__educator-number:hover, .product__educator-number:focus, .product__educator-number:visited {
+      color: #262626; }
+  .product__educator-subinfo {
+    margin-bottom: 0.5rem;
+    color: #8c8c8c;
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    font-size: 1.333rem; }
+    @media screen and (min-width: 768px) {
+      .product__educator-subinfo {
+        font-size: 1rem; } }
+  .product__educator-description {
+    margin-top: 1rem; }
+  .product__reviews {
+    margin-top: 3rem; }
+    .product__reviews-btn {
+      margin-top: 1.5rem; }
+  .product__review + .product__review {
+    margin-top: 1.5rem; }
+  .product__review-stars {
+    margin-bottom: 1rem; }
+  .product__related {
+    padding: 2.5rem 15px 3.75rem 15px; }
+    @media screen and (min-width: 768px) {
+      .product__related-courses {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between; } }
+    .product__related-item {
+      width: 100%; }
+      @media screen and (min-width: 768px) {
+        .product__related-item {
+          width: 33.33%; } }
+      .product__related-item + .product__related-item {
+        margin-top: 3rem; }
+        @media screen and (min-width: 768px) {
+          .product__related-item + .product__related-item {
+            margin-top: 0;
+            margin-left: 1.25rem; } }
+    .product__related-img {
+      margin-top: 0.5rem; }
+    .product__related-title, .product__related-author {
+      font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+      font-size: 1.333rem; }
+      @media screen and (min-width: 768px) {
+        .product__related-title, .product__related-author {
+          font-size: 1rem; } }
+    .product__related-title {
+      color: #262626;
+      margin-top: 1rem; }
+      .product__related-title:link, .product__related-title:hover, .product__related-title:focus, .product__related-title:visited {
+        color: #262626;
+        text-decoration: none; }
+    .product__related-author {
+      color: #8c8c8c;
+      margin: 0.5rem 0; }
+
+/*------------- 23. ACCORDION -------------*/
+.accordion {
+  margin-top: 0.5rem;
+  border: 1px solid #bbbbbb;
+  border-top: 0; }
+  .accordion__group {
+    margin-bottom: 0; }
+  .accordion__panel {
+    border-radius: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+    margin-top: 0 !important;
+    border-top: 1px solid #bbbbbb !important; }
+    .accordion__panel-header {
+      background-color: #f8f8f8;
+      border: 0 !important;
+      border-radius: 0 !important;
+      box-shadow: none !important;
+      outline: none !important;
+      position: relative;
+      padding: 0.8rem 15px; }
+    .accordion__panel-icon-wrapper {
+      position: absolute;
+      top: 0.6rem;
+      left: 0;
+      display: inline-block;
+      height: 1.5rem;
+      width: 1.5rem;
+      float: left;
+      border: 1px solid #262626;
+      border-radius: 100%; }
+      @media screen and (min-width: 768px) {
+        .accordion__panel-icon-wrapper {
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%); } }
+    .accordion__panel-icon {
+      color: black;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    .accordion__panel-toggle-wrapper {
+      position: relative; }
+    .accordion__panel-toggle {
+      font-family: "Calibre-Medium", Helvetica, Arial, sans-serif !important;
+      color: #262626 !important;
+      font-size: 1.8333rem !important;
+      margin-left: calc(1rem + 20px);
+      text-decoration: none !important; }
+      @media screen and (min-width: 768px) {
+        .accordion__panel-toggle {
+          font-size: 1.375rem !important; } }
+    .accordion__panel-body {
+      border: 0 !important;
+      border-top: 1px solid #bbbbbb !important;
+      padding: 1.25rem 1rem; }
+    .accordion__panel-info {
+      margin-top: 1rem; }
+      @media screen and (min-width: 992px) {
+        .accordion__panel-info {
+          margin-top: 0;
+          position: absolute;
+          top: 50%;
+          right: -5px;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%); } }
+      .accordion__panel-info-item {
+        color: #262626;
+        font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+        font-size: 1.41666rem; }
+        @media screen and (min-width: 768px) {
+          .accordion__panel-info-item {
+            font-size: 1.0625rem; } }

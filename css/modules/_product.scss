@@ -11,6 +11,9 @@
         }
     }
     &__quick-info {
+        &--alt {
+            margin: 2rem 0;
+        }
         &-item {
             @include atSmall {
                 float: left;
@@ -126,6 +129,7 @@
         }
         &-subinfo {
             margin-bottom: 0.5rem;
+            margin-top: 0.2rem;
             color: $gray;
             font-family: $medium;
             font-size: 1.333rem;
@@ -135,6 +139,13 @@
         }
         &-description {
             margin-top: 1rem;
+            &--alt {
+                @include atSmall {
+                    margin-top: 0;
+                    overflow: hidden;
+                    padding-left: 1rem;
+                }
+            }
         }
     }
     &__reviews {

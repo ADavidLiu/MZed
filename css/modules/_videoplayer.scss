@@ -1,0 +1,21 @@
+.videoplayer {
+    padding: 2.8125rem 0 1rem 0;
+    background-color: $accordion-bg;
+    &__title {
+        font-family: $medium;
+        color: $black;
+        font-size: 2.666rem;
+        @include atSmall {
+            font-size: 2rem;
+        }
+    }
+    &__subtitle {
+        font-size: 1.5rem;
+        color: $gray;
+        font-family: $medium;
+        margin: 0.5rem 0 1rem 0;
+        @include atSmall {
+            font-size: 1.125rem;
+        }
+    }
+}

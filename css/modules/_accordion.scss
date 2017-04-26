@@ -69,6 +69,11 @@
                 right: -5px;
                 transform: translateY(-50%);
             }
+            &--alt {
+                @include atMedium {
+                    right: 15px;
+                }
+            }
             &-item {
                 color: $black;
                 font-family: $medium;

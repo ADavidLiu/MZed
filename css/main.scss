@@ -39,6 +39,8 @@
     21. ACCOUNT
     22. PRODUCT
     23. ACCORDION
+    24. VIDEOPLAYER
+    25. WATCHING
 
 */
 
@@ -156,3 +158,13 @@
 /*------------- 23. ACCORDION -------------*/
 
 @import "modules/_accordion.scss";
+
+
+/*------------- 24. VIDEOPLAYER -------------*/
+
+@import "modules/_videoplayer.scss";
+
+
+/*------------- 25. WATCHING -------------*/
+
+@import "modules/_watching.scss";

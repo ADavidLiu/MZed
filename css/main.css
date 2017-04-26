@@ -49,10 +49,12 @@ ol {
   padding-left: 0; }
 
 input,
-button {
+button,
+textarea {
   border: none; }
   input:focus,
-  button:focus {
+  button:focus,
+  textarea:focus {
     outline: none; }
 
 ::-moz-selection {
@@ -119,6 +121,8 @@ button {
     21. ACCOUNT
     22. PRODUCT
     23. ACCORDION
+    24. VIDEOPLAYER
+    25. WATCHING
 
 */
 /*------------- 1. HERO -------------*/
@@ -1241,11 +1245,16 @@ button {
         margin-bottom: 0; } }
     .course__cta--small {
       width: 6.875rem; }
+    .course__cta--extrasmall {
+      width: 5rem; }
     .course__cta--gray {
       color: #8c8c8c; }
       .course__cta--gray:link, .course__cta--gray:hover, .course__cta--gray:focus, .course__cta--gray:visited {
         color: #8c8c8c; }
     .course__cta--border-gray {
+      border-color: #8c8c8c; }
+    .course__cta--bg-gray {
+      background-color: #8c8c8c;
       border-color: #8c8c8c; }
     .course__cta-description {
       display: block;
@@ -2230,6 +2239,8 @@ button {
     @media screen and (min-width: 768px) {
       .product__content-wrapper {
         padding: 1.875rem 15px; } }
+  .product__quick-info--alt {
+    margin: 2rem 0; }
   @media screen and (min-width: 768px) {
     .product__quick-info-item {
       float: left; } }
@@ -2317,6 +2328,7 @@ button {
       color: #262626; }
   .product__educator-subinfo {
     margin-bottom: 0.5rem;
+    margin-top: 0.2rem;
     color: #8c8c8c;
     font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
     font-size: 1.333rem; }
@@ -2325,6 +2337,11 @@ button {
         font-size: 1rem; } }
   .product__educator-description {
     margin-top: 1rem; }
+    @media screen and (min-width: 768px) {
+      .product__educator-description--alt {
+        margin-top: 0;
+        overflow: hidden;
+        padding-left: 1rem; } }
   .product__reviews {
     margin-top: 3rem; }
     .product__reviews-btn {
@@ -2443,6 +2460,9 @@ button {
           -webkit-transform: translateY(-50%);
           -ms-transform: translateY(-50%);
           transform: translateY(-50%); } }
+      @media screen and (min-width: 992px) {
+        .accordion__panel-info--alt {
+          right: 15px; } }
       .accordion__panel-info-item {
         color: #262626;
         font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
@@ -2450,3 +2470,95 @@ button {
         @media screen and (min-width: 768px) {
           .accordion__panel-info-item {
             font-size: 1.0625rem; } }
+
+/*------------- 24. VIDEOPLAYER -------------*/
+.videoplayer {
+  padding: 2.8125rem 0 1rem 0;
+  background-color: #f8f8f8; }
+  .videoplayer__title {
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    color: #262626;
+    font-size: 2.666rem; }
+    @media screen and (min-width: 768px) {
+      .videoplayer__title {
+        font-size: 2rem; } }
+  .videoplayer__subtitle {
+    font-size: 1.5rem;
+    color: #8c8c8c;
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    margin: 0.5rem 0 1rem 0; }
+    @media screen and (min-width: 768px) {
+      .videoplayer__subtitle {
+        font-size: 1.125rem; } }
+
+/*------------- 25. WATCHING -------------*/
+.watching {
+  padding: 2.5rem 15px 3.125rem 15px; }
+  .watching__tabs {
+    border-bottom: 1px solid #bbbbbb !important;
+    margin-bottom: 2.1875rem; }
+  .watching__tabs-item {
+    margin-bottom: 0 !important; }
+    .watching__tabs-item:not(:last-child) {
+      margin-right: 1.875rem; }
+    .watching__tabs-item.active {
+      -webkit-box-shadow: inset 0px -5px 0px 0px #00b8e6;
+      -moz-box-shadow: inset 0px -5px 0px 0px #00b8e6;
+      box-shadow: inset 0px -5px 0px 0px #00b8e6; }
+  .watching__toggle {
+    font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+    font-size: 1.5833rem;
+    color: #8c8c8c;
+    border: 0 !important;
+    border-radius: 0 !important;
+    padding: 0 0 1.25rem 0 !important; }
+    @media screen and (min-width: 768px) {
+      .watching__toggle {
+        font-size: 1.1875rem; } }
+    .watching__toggle:link, .watching__toggle:hover, .watching__toggle:focus, .watching__toggle:visited {
+      background-color: transparent !important;
+      text-decoration: none !important;
+      color: #8c8c8c !important; }
+  .watching__notes {
+    max-width: 670px;
+    margin: 0 auto; }
+    .watching__notes-input {
+      height: 5.9375rem;
+      width: 100%;
+      border: 1px solid #bbbbbb;
+      padding: 1rem;
+      color: #8c8c8c;
+      font-family: "Calibre-Regular", Helvetica, Arial, sans-serif;
+      font-size: 1rem;
+      margin-bottom: 0.5rem; }
+    .watching__notes-list {
+      margin-top: 1.5rem; }
+  .watching__timestamp {
+    margin-bottom: 1.5rem; }
+    .watching__timestamp-time {
+      display: inline-block; }
+    .watching__timestamp-delete {
+      font-family: "Calibre-Medium", Helvetica, Arial, sans-serif;
+      font-size: 1.25rem;
+      color: #8c8c8c;
+      cursor: pointer; }
+      @media screen and (min-width: 768px) {
+        .watching__timestamp-delete {
+          font-size: 0.9375rem;
+          float: right; } }
+  .watching__note, .watching__bookmark {
+    padding: 1.5rem 0;
+    border-top: 1px solid #8c8c8c; }
+  .watching__bookmarks {
+    max-width: 670px;
+    margin: 0 auto; }
+    .watching__bookmarks-icon {
+      margin-right: 0.2rem;
+      font-size: 1rem;
+      color: #ffffff; }
+    .watching__bookmarks-add {
+      margin-bottom: 1.5rem; }
+  .watching__bookmark-icon {
+    margin-left: 0.2rem;
+    font-size: 1rem;
+    color: #8c8c8c; }

@@ -144,6 +144,9 @@
         &--small {
             width: 6.875rem;
         }
+        &--extrasmall {
+            width: 5rem;
+        }
         &--gray {
             color: $gray;
             &:link,
@@ -154,6 +157,10 @@
             }
         }
         &--border-gray {
+            border-color: $gray;
+        }
+        &--bg-gray {
+            background-color: $gray;
             border-color: $gray;
         }
         &-description {

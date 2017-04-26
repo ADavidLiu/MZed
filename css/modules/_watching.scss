@@ -1,0 +1,94 @@
+.watching {
+    padding: 2.5rem 15px 3.125rem 15px;
+    &__tabs {
+        border-bottom: 1px solid $form-border !important;
+        margin-bottom: 2.1875rem;
+    }
+    &__tabs-item {
+        margin-bottom: 0 !important;
+        &:not(:last-child) {
+            margin-right: 1.875rem;
+        }
+        &.active {
+            -webkit-box-shadow: inset 0px -5px 0px 0px rgba(0, 184, 230, 1);
+            -moz-box-shadow: inset 0px -5px 0px 0px rgba(0, 184, 230, 1);
+            box-shadow: inset 0px -5px 0px 0px rgba(0, 184, 230, 1);
+        }
+    }
+    &__toggle {
+        font-family: $medium;
+        font-size: 1.5833rem;
+        color: $gray;
+        border: 0 !important;
+        border-radius: 0 !important;
+        padding: 0 0 1.25rem 0 !important;
+        @include atSmall {
+            font-size: 1.1875rem;
+        }
+        &:link,
+        &:hover,
+        &:focus,
+        &:visited {
+            background-color: transparent !important;
+            text-decoration: none !important;
+            color: $gray !important;
+        }
+    }
+    &__notes {
+        max-width: 670px;
+        margin: 0 auto;
+        &-input {
+            height: 5.9375rem;
+            width: 100%;
+            border: 1px solid $form-border;
+            padding: 1rem;
+            color: $gray;
+            font-family: $regular;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        &-list {
+            margin-top: 1.5rem;
+        }
+    }
+    &__timestamp {
+        margin-bottom: 1.5rem;
+        &-time {
+            display: inline-block;
+        }
+        &-delete {
+            font-family: $medium;
+            font-size: 1.25rem;
+            color: $gray;
+            cursor: pointer;
+            @include atSmall {
+                font-size: 0.9375rem;
+                float: right;
+            }
+        }
+    }
+    &__note,
+    &__bookmark {
+        padding: 1.5rem 0;
+        border-top: 1px solid $gray;
+    }
+    &__bookmarks {
+        max-width: 670px;
+        margin: 0 auto;
+        &-icon {
+            margin-right: 0.2rem;
+            font-size: 1rem;
+            color: $white;
+        }
+        &-add {
+            margin-bottom: 1.5rem;
+        }
+    }
+    &__bookmark {
+        &-icon {
+            margin-left: 0.2rem;
+            font-size: 1rem;
+            color: $gray;
+        }
+    }
+}
